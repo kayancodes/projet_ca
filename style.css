@@ -183,6 +183,10 @@ main {
   text-align: left;
 }
 
+.main__body .introduction_texte p {
+  margin-bottom: 1.2rem !important;
+}
+
 .main__body .introduction_button {
   text-align: left;
   margin-top: 20px;
