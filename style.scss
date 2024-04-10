@@ -29,7 +29,8 @@
 // $color4:#8E8E8E;
 --color5:#000; 
 --color6:#404040;
-
+--color7:#4472c4;
+--color8:#181c35;
 
 
 
@@ -40,23 +41,29 @@
 --body-font: 'Roboto', sans-serif;
 
 
---h1-font-size:1.9rem;
+--h1-font-size:2.1em;
 --h1-font-size-Mobile:1.9rem;
---h2-font-size:1.6rem;
---h3-font-size:0.8125rem;
---normal-plus: 1rem;
---normal-font-size: 0.8125rem;
---small-font-size:0.5625rem;
+--h2-font-size:1.4rem;
+// --h3-font-size:0.8125rem;
+--h3-font-size: 1.25rem !important;
+
+--normal-plus:0.9rem;
+--normal-font-size: 0.9rem;
+--small-font-size:0.9rem;
 --smaller-font-size:0.4375rem;
 
-@include md{
-    // --h1-font-size:2.8rem;
-    --h2-font-size:1.3rem;
-    --h3-font-size:0.9375rem;
-    --normal-font-size:0.8125rem;
-    --small-font-size:0.625rem;
-    --smaller-font-size:0.4375rem
-}
+// --normal-font-size: 0.8125rem;
+// --small-font-size:0.5625rem;
+// --smaller-font-size:0.4375rem;
+
+// @include md{
+//     // --h1-font-size:2.8rem;
+//     --h2-font-size:1.3rem;
+//     --h3-font-size:0.9375rem;
+//     --normal-font-size:0.8125rem;
+//     --small-font-size:0.625rem;
+//     --smaller-font-size:0.4375rem
+// }
 
 
 /*--------FONT WEIGHT----------------------------------------------------------*/
@@ -75,7 +82,9 @@
 --mb-50:3.125rem;
 --mb-60:3.75rem;
 --mb-70:4.375rem;
+--mb-80:5rem;
 --mb-100:6.25rem;
+--mb-150:9.375rem;
 
 @include md{
     --mb-30:1.875rem;
@@ -101,6 +110,7 @@
     padding: 0;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -108,7 +118,7 @@ html {
 h1{
     font-family: var(--title-font);
     font-size: var(--h1-font-size-Mobile);
-    font-weight: var(--font-normal);
+    font-weight: var(--font-medium);
     margin-bottom: .5rem;
     color: var(--color5);
     text-align: left;
@@ -118,17 +128,25 @@ h1{
 h2{
     font-family: var(--body-font);
     font-weight: var(--font-regular);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: var(--h2-font-size);
+    color: var(--color7);
+    line-height: 2rem;
+}
+
+h2.title{
     color: var(--color3);
 }
 
 h3{
     font-family: var(--title-font);
     font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: 0rem;
+    font-weight: var(--font-regular);
+    color:var(--color8);
+    margin-bottom: .5rem;
 }
+
+
 
 
 p, li{
@@ -136,12 +154,35 @@ p, li{
     color:var(--color5);
     font-weight: var(--font-light);
     font-size: var(--normal-plus);
-    line-height: 1.6rem;
+    line-height: 1.4rem;
 }
 
-li{
-    margin: .5rem 0;
+p, ul{
+    margin-bottom: .6rem;
 }
+
+
+.firstP{
+    margin-top: var(--mb-50);
+}
+
+
+li{
+    margin-top: .5rem;
+    line-height: 1.3rem;
+}
+
+p.gonogo{
+ margin-top: 2rem;
+}
+
+
+.board_zero--chapitreSectionTitre{
+    font-weight: 400;
+    color: var(--color7);
+    // font-size: 1.2rem;
+}
+
 
 ul {
     list-style: none;
@@ -153,18 +194,72 @@ a{
 }
 
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
 main{
     width: 100%;
     display: block;
     margin: 4.6875rem auto 0;
     padding: 0 2rem;
 }
+
+// .board p{
+//     margin-bottom: .8rem !important;
+// }
+
+
+.margin_top{
+    margin-top: 3rem;
+}
+
+.margin_top_0{
+    margin-top: 0 !important;
+}
+
+.margin_top_2{
+    margin-top: 2rem;
+}
+
+.margin_bottom_0{
+    margin-bottom: 0 !important;
+}
+
+.padding_left{
+    padding-left: 5rem;
+}
+
+.padding_left.ano{
+padding-left: 0;
+}
+
+
+.first{
+    margin-top: var(--mb-50) !important;
+    // background-color: orange;
+}
+
+
+.objectif{
+    font-weight: var(--font-medium);
+}
+
+//--------- DEBUT IMAGES----------//
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img_cecs{
+    width: 100%;
+}
+
+.img_middle{
+    width: 100%;
+}
+
+
+//--------- FIN IMAGES----------//
+
+
 
 
 
@@ -308,28 +403,313 @@ line-height: 1.3rem;
 
 
 
+/*===================== DEBUT SOMMAIRE =======================================================*/
+
+.main__body{
+    .sommaire{
+        // border: 1px solid purple;
+        margin-top: 30rem !important;
+    }
+
+    .board_zero--chapitreSection{
+        // border: 1px solid green;
+        margin-top: 1.3rem;
+    }
+
+    .board.board_zero.sommaire{
+        p{
+            margin-bottom: 0 !important;
+        }
+
+        li{
+            // border: 1px solid pink;
+            margin-top: .2rem;
+        }
+    }
+}
+     
+/*===================== FIN SOMMAIRE =======================================================*/
+
+
+
+
+
+
+/*=====================DEBUT IMG INTER BOARDS=======================================================*/
+
+
+.board_img--header{
+    margin-top: 30rem;
+    // border: 1px solid red;
+}
+
+/*===================== FIN IMG INTER BOARDS=======================================================*/
+
+
+
+
+
+/*===================== DEBUT PRESENTATION PROJET =======================================================*/
+
+.main__body{
+    .padding_leftCourt{
+        // border: 1px solid red;
+        padding-left: 1.7rem;
+    }
+
+    .Board_sousBoard.presentation{
+        .board_infos{
+            .box4{
+                .boxin{
+                    // border: 1px solid green;
+                    margin-bottom:3rem;
+
+                    img{
+                        // border: 1px solid blue;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+     
+/*===================== FIN PRESENTATION PROJET =======================================================*/
+
+
+
+
+
+
+
+
+
+
 
 
 
 /*===================== DEBUT BOARD =======================================================*/
 .main__body .board{
-    padding-top: var(--mb-70);
-    margin-bottom: var(--mb-50);
 
-    .board_img{
-        margin-bottom: var(--mb-40);
+    margin-top:var(--mb-100);
+    // border: 1px solid red;
+
+    p.chapitreTitre{
+        font-family: var(--body-font);
+        color:var(--color5);
+        font-weight: 400;
+        font-size: 2.1rem;
+        line-height: 2.2rem;
+        margin-bottom: 3rem;
+    
     }
+
+
+/*============ DEBUT PRESENTATION ===============*/
+
+.Board_sousBoard.presentation{
+    // border: 1px solid blue;
+    margin-top: var(--mb-70);
+}
+
+
+/*============ FIN PRESENTATION ===============*/
+
 
     .board_infos{
-        margin-bottom: var(--mb-50);
+        margin-bottom: 2rem
         // border: 1px solid green;
     }
+
+    .Board_sousBoard{
+        // border: 1px solid blue;
+        margin-top: 18rem;
+    }
+
+    .Board_sousBoard--item{
+        // border: 1px solid green;
+        margin-top: 7rem;
+    }
+
+
+
+    .indicateurs{
+        // border: 1px solid pink;
+        margin-top: 2rem;
+        // padding-left: 5rem;
+    }
+
+
+
+
+
+
+    .board_img--itemCourt{
+        margin-top: 0.3rem;
+        // margin-bottom:1.5rem;
+    }
+
+    .board_img--item{
+        margin : 1.5rem 0;
+    }
+
+
+
+
+
+
+
+    // .board_item{
+    //     // border: 1px solid blue;
+    //     margin-bottom: var(--mb-60);
+    // }
+    
+    // .board_item:last-child{
+    //     margin-bottom: 0rem;
+    // }
+    
+
+
+
+
+    // .board_zero--chapitre{
+    //     // border: 1px solid green;
+    //     margin-bottom: var(--mb-40);
+    // }
+
+    // .board_zero--chapitreTitre{
+    //     margin-bottom: .5rem;
+    // }
+
+    // .board_zero--chapitreSection{
+    //     // border: 1px solid pink;
+    //     margin-bottom: 1.3rem;
+    // }
+
+
+
+////////////////////
+
+
+
+
+
+
+
+
+    .board_chapitre{
+        // border: 1px solid pink;
+        margin-bottom: 5rem;
+    }
+
+
+
+
+
+
+// ---------- DEBUT FLEXBOX BOX ----------------//
+    .box4{
+        // border: 1px solid red;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .boxin{
+            // border: 1px solid blue;
+            width: 100%;
+            text-align: center;
+            padding: 0 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .boxin p{
+            font-family: var(--body-font);
+            color:var(--color5);
+            font-weight: var(--font-light);
+            font-size: var(--normal-font-size);
+            line-height: 1.7rem;
+        }
+
+        img{
+            width: 60%;
+        }
+
+    }
+
+
+
+
+
+    .box5{
+        // border: 1px solid red;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .boxin5{
+            // border:1px solid red;
+            width: 100%;
+            text-align: left;
+            padding: 0 .5rem;
+            margin-top: 4rem;
+
+        }
+
+        .boxin5.margin_top_ecranmobile{
+            // border: 1px solid pink;
+            margin-top: 1rem;
+        }
+
+        .boxin5 p{
+            font-family: var(--body-font);
+            color:var(--color5);
+            font-weight: var(--font-light);
+            font-size: var(--normal-font-size);
+            line-height: 1.7rem;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        p{
+            margin-bottom: 0 !important;
+        }
+
+    }
+// ---------- FIN FLEXBOX BOX ----------------//
+
 }
 
-.main__body .board:last-of-type{
-        margin-bottom: 10rem;
-        // background-color: red;
+
+
+
+
+
+
+
+
+// .main__body .board:last-of-type{
+//         margin-bottom: 10rem;
+//         // background-color: red;
+// }
+
+
+
+.liste_bpmn li{
+    // border: 1px solid olivedrab;
+    margin-bottom: 1rem;
+
 }
+
+
+
+
+
 
 
 /*===================== FIN BOARD =======================================================*/
@@ -403,12 +783,24 @@ footer{
 /*===================== DEBUT RESPONSIVE ====================================================================================*/
 
 //------------ DEBUT S ( > 414px) : small smartphones (landscape view) ---------//
-@include s{}
+@include s{
+
+
+
+
+
+
+}
 //------------ FIN S ( > 414px) : small smartphones (landscape view) ---------//
 
 
 //------------ DEBUT SM ( > 568px) : ssmall tablets and large smartphones (landscape view) ---------//
-@include sm{}
+@include sm{
+
+
+
+
+}
 //------------ FIN SM ( > 568px) : small tablets and large smartphones (landscape view) ---------//
 
 
@@ -472,6 +864,150 @@ footer{
     .scrollup {
         right:0.5rem;
     }
+
+
+
+//------------------DEBUT FLEXBOX------------------//
+
+
+.main__body .board .box4{
+        // border: 1px solid red;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .boxin{
+            // border: 1px solid blue;
+            width: 25%;
+            text-align: center;
+            padding: 0 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .boxin p{
+            font-family: var(--body-font);
+            color:var(--color5);
+            font-weight: var(--font-light);
+            font-size: var(--normal-font-size);
+            line-height: 1.7rem;
+        }
+
+        img{
+            width: 60%;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main__body .board .box5{
+    // border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    .boxin5{
+        // border: 1px solid red;
+        width: 48%;
+        text-align: left;
+        padding: 0 1.5rem;
+        margin-top: 4rem;
+        margin-bottom: 0rem;
+    }
+
+    .boxin5.margin_top_ecranmobile{
+        // border: 1px solid pink;
+        margin-top: 2rem;
+    }
+
+    .boxin5.margin_top_ecranmobile2{
+        // border: 1px solid green;
+        margin-top: 2rem;
+    }
+
+
+
+
+}
+
+
+
+//------------------FIN FLEXBOX----------------------//
+
+
+//--------- DEBUT IMAGES----------//
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img_cecs{
+    width: 90%;
+}
+
+.img_exe_test{
+    width: 45%;
+}
+
+.img_type_fonctionnalite{
+    width: 45%;
+}
+
+
+.img_campagne_f{
+    width: 45%;
+}
+
+.img_anomalie{
+    width: 60%;
+}
+
+
+.img_decision{
+    width: 60%;
+}
+
+.img_gonogo{
+    width: 100%;
+}
+
+.img_middle{
+    width: 40%;
+}
+
+
+//--------- FIN IMAGES----------//
+
+
+
+
+.indicateurs{
+    // border: 1px solid pink;
+    margin-top: 2rem;
+    padding-left: 5rem;
+}
+
+
+.padding_left.ano{
+    padding-left: 5rem;
+    }
+
+
 
 }
 //------------ FIN MD ( > 768px) : small tablets and large smartphones (landscape view) ---------//

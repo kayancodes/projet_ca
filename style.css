@@ -10,16 +10,18 @@
   --color4:#f7f7f7;
   --color5:#000;
   --color6:#404040;
+  --color7:#4472c4;
+  --color8:#181c35;
   /*--------FONT AND TYPOGRAPHY---------------------------*/
   --title-font:"Roboto", sans-serif;
   --body-font: "Roboto", sans-serif;
-  --h1-font-size:1.9rem;
+  --h1-font-size:2.1em;
   --h1-font-size-Mobile:1.9rem;
-  --h2-font-size:1.6rem;
-  --h3-font-size:0.8125rem;
-  --normal-plus: 1rem;
-  --normal-font-size: 0.8125rem;
-  --small-font-size:0.5625rem;
+  --h2-font-size:1.4rem;
+  --h3-font-size: 1.25rem !important;
+  --normal-plus:0.9rem;
+  --normal-font-size: 0.9rem;
+  --small-font-size:0.9rem;
   --smaller-font-size:0.4375rem;
   /*--------FONT WEIGHT----------------------------------------------------------*/
   --font-thin: 100;
@@ -35,16 +37,9 @@
   --mb-50:3.125rem;
   --mb-60:3.75rem;
   --mb-70:4.375rem;
+  --mb-80:5rem;
   --mb-100:6.25rem;
-}
-@media (min-width: 768px) {
-  :root {
-    --h2-font-size:1.3rem;
-    --h3-font-size:0.9375rem;
-    --normal-font-size:0.8125rem;
-    --small-font-size:0.625rem;
-    --smaller-font-size:0.4375rem ;
-  }
+  --mb-150:9.375rem;
 }
 @media (min-width: 768px) {
   :root {
@@ -69,7 +64,7 @@ html {
 h1 {
   font-family: var(--title-font);
   font-size: var(--h1-font-size-Mobile);
-  font-weight: var(--font-normal);
+  font-weight: var(--font-medium);
   margin-bottom: 0.5rem;
   color: var(--color5);
   text-align: left;
@@ -78,16 +73,22 @@ h1 {
 h2 {
   font-family: var(--body-font);
   font-weight: var(--font-regular);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: var(--h2-font-size);
+  color: var(--color7);
+  line-height: 2rem;
+}
+
+h2.title {
   color: var(--color3);
 }
 
 h3 {
   font-family: var(--title-font);
   font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-  margin-bottom: 0rem;
+  font-weight: var(--font-regular);
+  color: var(--color8);
+  margin-bottom: 0.5rem;
 }
 
 p, li {
@@ -95,11 +96,29 @@ p, li {
   color: var(--color5);
   font-weight: var(--font-light);
   font-size: var(--normal-plus);
-  line-height: 1.6rem;
+  line-height: 1.4rem;
+}
+
+p, ul {
+  margin-bottom: 0.6rem;
+}
+
+.firstP {
+  margin-top: var(--mb-50);
 }
 
 li {
-  margin: 0.5rem 0;
+  margin-top: 0.5rem;
+  line-height: 1.3rem;
+}
+
+p.gonogo {
+  margin-top: 2rem;
+}
+
+.board_zero--chapitreSectionTitre {
+  font-weight: 400;
+  color: var(--color7);
 }
 
 ul {
@@ -110,16 +129,56 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 main {
   width: 100%;
   display: block;
   margin: 4.6875rem auto 0;
   padding: 0 2rem;
+}
+
+.margin_top {
+  margin-top: 3rem;
+}
+
+.margin_top_0 {
+  margin-top: 0 !important;
+}
+
+.margin_top_2 {
+  margin-top: 2rem;
+}
+
+.margin_bottom_0 {
+  margin-bottom: 0 !important;
+}
+
+.padding_left {
+  padding-left: 5rem;
+}
+
+.padding_left.ano {
+  padding-left: 0;
+}
+
+.first {
+  margin-top: var(--mb-50) !important;
+}
+
+.objectif {
+  font-weight: var(--font-medium);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img_cecs {
+  width: 100%;
+}
+
+.img_middle {
+  width: 100%;
 }
 
 .button {
@@ -237,20 +296,129 @@ main {
 }
 
 /*===================== FIN INTRODUCTION=======================================================*/
-/*===================== DEBUT BOARD =======================================================*/
-.main__body .board {
-  padding-top: var(--mb-70);
-  margin-bottom: var(--mb-50);
+/*===================== DEBUT SOMMAIRE =======================================================*/
+.main__body .sommaire {
+  margin-top: 30rem !important;
 }
-.main__body .board .board_img {
-  margin-bottom: var(--mb-40);
+.main__body .board_zero--chapitreSection {
+  margin-top: 1.3rem;
 }
-.main__body .board .board_infos {
-  margin-bottom: var(--mb-50);
+.main__body .board.board_zero.sommaire p {
+  margin-bottom: 0 !important;
+}
+.main__body .board.board_zero.sommaire li {
+  margin-top: 0.2rem;
 }
 
-.main__body .board:last-of-type {
-  margin-bottom: 10rem;
+/*===================== FIN SOMMAIRE =======================================================*/
+/*=====================DEBUT IMG INTER BOARDS=======================================================*/
+.board_img--header {
+  margin-top: 30rem;
+}
+
+/*===================== FIN IMG INTER BOARDS=======================================================*/
+/*===================== DEBUT PRESENTATION PROJET =======================================================*/
+.main__body .padding_leftCourt {
+  padding-left: 1.7rem;
+}
+.main__body .Board_sousBoard.presentation .board_infos .box4 .boxin {
+  margin-bottom: 3rem;
+}
+.main__body .Board_sousBoard.presentation .board_infos .box4 .boxin img {
+  margin-bottom: 1rem;
+}
+
+/*===================== FIN PRESENTATION PROJET =======================================================*/
+/*===================== DEBUT BOARD =======================================================*/
+.main__body .board {
+  margin-top: var(--mb-100);
+  /*============ DEBUT PRESENTATION ===============*/
+  /*============ FIN PRESENTATION ===============*/
+}
+.main__body .board p.chapitreTitre {
+  font-family: var(--body-font);
+  color: var(--color5);
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 2.2rem;
+  margin-bottom: 3rem;
+}
+.main__body .board .Board_sousBoard.presentation {
+  margin-top: var(--mb-70);
+}
+.main__body .board .board_infos {
+  margin-bottom: 2rem;
+}
+.main__body .board .Board_sousBoard {
+  margin-top: 18rem;
+}
+.main__body .board .Board_sousBoard--item {
+  margin-top: 7rem;
+}
+.main__body .board .indicateurs {
+  margin-top: 2rem;
+}
+.main__body .board .board_img--itemCourt {
+  margin-top: 0.3rem;
+}
+.main__body .board .board_img--item {
+  margin: 1.5rem 0;
+}
+.main__body .board .board_chapitre {
+  margin-bottom: 5rem;
+}
+.main__body .board .box4 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main__body .board .box4 .boxin {
+  width: 100%;
+  text-align: center;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.main__body .board .box4 .boxin p {
+  font-family: var(--body-font);
+  color: var(--color5);
+  font-weight: var(--font-light);
+  font-size: var(--normal-font-size);
+  line-height: 1.7rem;
+}
+.main__body .board .box4 img {
+  width: 60%;
+}
+.main__body .board .box5 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main__body .board .box5 .boxin5 {
+  width: 100%;
+  text-align: left;
+  padding: 0 0.5rem;
+  margin-top: 4rem;
+}
+.main__body .board .box5 .boxin5.margin_top_ecranmobile {
+  margin-top: 1rem;
+}
+.main__body .board .box5 .boxin5 p {
+  font-family: var(--body-font);
+  color: var(--color5);
+  font-weight: var(--font-light);
+  font-size: var(--normal-font-size);
+  line-height: 1.7rem;
+}
+.main__body .board .box5 img {
+  width: 100%;
+}
+.main__body .board .box5 p {
+  margin-bottom: 0 !important;
+}
+
+.liste_bpmn li {
+  margin-bottom: 1rem;
 }
 
 /*===================== FIN BOARD =======================================================*/
@@ -359,6 +527,95 @@ footer {
 
   .scrollup {
     right: 0.5rem;
+  }
+
+  .main__body .board .box4 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main__body .board .box4 .boxin {
+    width: 25%;
+    text-align: center;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .main__body .board .box4 .boxin p {
+    font-family: var(--body-font);
+    color: var(--color5);
+    font-weight: var(--font-light);
+    font-size: var(--normal-font-size);
+    line-height: 1.7rem;
+  }
+  .main__body .board .box4 img {
+    width: 60%;
+  }
+
+  .main__body .board .box5 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main__body .board .box5 .boxin5 {
+    width: 48%;
+    text-align: left;
+    padding: 0 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+  }
+  .main__body .board .box5 .boxin5.margin_top_ecranmobile {
+    margin-top: 2rem;
+  }
+  .main__body .board .box5 .boxin5.margin_top_ecranmobile2 {
+    margin-top: 2rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .img_cecs {
+    width: 90%;
+  }
+
+  .img_exe_test {
+    width: 45%;
+  }
+
+  .img_type_fonctionnalite {
+    width: 45%;
+  }
+
+  .img_campagne_f {
+    width: 45%;
+  }
+
+  .img_anomalie {
+    width: 60%;
+  }
+
+  .img_decision {
+    width: 60%;
+  }
+
+  .img_gonogo {
+    width: 100%;
+  }
+
+  .img_middle {
+    width: 40%;
+  }
+
+  .indicateurs {
+    margin-top: 2rem;
+    padding-left: 5rem;
+  }
+
+  .padding_left.ano {
+    padding-left: 5rem;
   }
 }
 @media (min-width: 962px) {
