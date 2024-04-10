@@ -199,8 +199,7 @@
                             </a>
                             <ul class="board_sousInfos">
                                 <li class="padding_leftCourt">Choix des outils</li>
-                                <li class="padding_leftCourt">Critères d'entrée et critères
-                                    de sortie</li>
+                                <li class="padding_leftCourt">Critères d'entrée et de sortie</li>
                             </ul>
                         </div>
 
@@ -214,7 +213,7 @@
                             <ul class="board_sousInfos">
                                 <li class="padding_leftCourt">Revue documentaire</li>
                                 <li class="padding_leftCourt">Diagramme de cas d’utilisation</li>
-                                <!-- <li class="padding_leftCourt">Modélisation BPMN</li> -->
+                                <li class="padding_leftCourt">Modélisation BPMN</li>
                                 <li class="padding_leftCourt">Référentiel des exigences</li>
                             </ul>
                         </div>
@@ -458,12 +457,24 @@
 
                             <p>Ici, le Plan de test Maitre avait déjà été réalisé par le Test Manager.</p>
                             <p class="margin_bottom_0"> Il ne nous
-                                restait plus qu’à choisir les outils pour mener à bien nos activités de test
-                                puis réaliser le Plan de Test par Niveau de Test, à savoir
+                                restait plus qu’à réaliser le Plan de Test par Niveau de Test, à savoir
                                 identifier les critères d’entrée et les critères de sortie de notre niveau de test, le
                                 test
-                                Système.</p>
+                                Système, puis à
 
+                                choisir les outils pour mener à bien nos activités de test.</p>
+
+
+                            <div class="Board_sousBoard--item first">
+                                <h3 class="margin_bottom_30">Critères d’entrée et de sortie</h3>
+                                <p class="margin_bottom_0">Critères d'entrée</p>
+                                <img class="board_img board_img--itemCourt img_cecs" src="assets/img/board_img--CE.png"
+                                    alt="">
+                                </br> </br>
+                                <p class="margin_bottom_0">Critères de sortie</p>
+                                <img class="board_img board_img--itemCourt margin_bottom_0 img_cecs"
+                                    src="assets/img/board_img--CS.png" alt="">
+                            </div>
 
 
                             <div class="Board_sousBoard--item first">
@@ -483,19 +494,6 @@
                                                 de
                                                 dessin graphique</li>
                                         </ul>
-                            </div>
-
-
-
-                            <div class="Board_sousBoard--item first">
-                                <h3 class="margin_bottom_30">Critères d’entrée et critères de sortie</h3>
-                                <p class="margin_bottom_0">Critères d'entrée</p>
-                                <img class="board_img board_img--itemCourt img_cecs" src="assets/img/board_img--CE.png"
-                                    alt="">
-                                </br> </br>
-                                <p class="margin_bottom_0">Critères de sortie</p>
-                                <img class="board_img board_img--itemCourt margin_bottom_0 img_cecs"
-                                    src="assets/img/board_img--CS.png" alt="">
                             </div>
 
                         </div>
@@ -577,7 +575,34 @@
                         <!--------- FIN DIAGRAMME CAS D'UTILISATION --------------------------------------------->
 
 
-                        <!--------- DEBUT BPMN ------------------------------------------------------------------
+                        <!--------- DEBUT BPMN ------------------------------------------------------------------>
+                        <div class="Board_sousBoard--item">
+                            <h3>Modélisation BPMN</h3>
+                            <p>Un diagramme Business Process Model and Notation (BPMN), a été réalisé dans l’objectif
+                                d’obtenir une représentation visuelle du processus métier : </br>« UC1-Mettre en place
+                                un
+                                contrat de crédit automobile. ».</p>
+                            <img class="board_img board_img--item" src="assets/img/board_img--bpmnV2.png" alt="">
+
+                            <div class="board_zero--chapitreSection">
+                                <p>Il y a 3 acteurs :</p>
+                                <ul class="board_sousInfos">
+                                    <li class="padding_leftCourt">Le client</li>
+                                    <li class="padding_leftCourt">Le chargé de clientèle
+                                    </li>
+                                    <li class="padding_leftCourt">Le Backoffice</li>
+                                </ul>
+                            </div>
+                            <br>
+
+                            <div class="board_zero--chapitreSection">
+                                <p>Les étapes du processus :</p>
+                                <ul class="board_sousInfos liste_bpmn">
+                                    <!-- <li class="padding_leftCourt">01. Dans le backoffice, la connexion et
+                                        l’identification sont réalisées.</li> -->
+
+
+                                    <!--------- DEBUT BPMN TEXTE V1------------------------------------------------------------------
                         <div class="Board_sousBoard--item">
                             <h3>Modélisation BPMN</h3>
                             <p>Un diagramme Business Process Model and Notation (BPMN), a été réalisé dans l’objectif
@@ -651,7 +676,60 @@
 
 
                         </div>
-                        ------- FIN BPMN -------------------------------------------------------------------->
+                        ------- FIN BPMN TEXTE V1-------------------------------------------------------------------->
+
+
+                                    <!-- DEBUT BPMN  TEXTE V2 -->
+
+                                    <li class="padding_leftCourt">02. Le client fait une demande de crédit par
+                                        simulation</li>
+
+                                    <li class="padding_leftCourt">03. Le chargé de clientèle vérifie l'adéquation
+                                        du besoin<br>
+                                        Non, il n'y a pas d'adéquation, le processus s’arrête.</br>
+                                        Oui, il y a adéquation, la simulation est réalisée, le processus est poursuivi.
+                                    </li>
+
+                                    <li class="padding_leftCourt">05. Le chargé de clientèle réalise la simulation.
+                                    </li>
+
+
+                                    <li class="padding_leftCourt">06. Le client est-il Intéressé par le resultat de la
+                                        simulation ?<br>
+                                        Non, le processus
+                                        s’arrête.</br>
+                                        Oui, le processus est poursuivi et le chargé de
+                                        clientèle vérifie l’acceptabilité du dossier de crédit.
+                                    </li>
+
+
+                                    <li class="padding_leftCourt">07. Dossier acceptable ?<br>
+                                        Non, le processus
+                                        s’arrête.</br>
+                                        Oui, le processus est poursuivi et le chargé de
+                                        clientèle collecte les documents justificatifs, établit et édite 2 exemplaires
+                                        du
+                                        contrat de crédit et imprime le contrat.
+                                    </li>
+
+                                    <li class="padding_leftCourt">08. Contrat signé ?</br>
+                                        Non, le processus prend fin</br>
+                                        Oui, le processus est poursuivi
+                                    </li>
+
+                                    <li class="padding_leftCourt">
+                                        09. Le chargée de clientèle numérise le contrat
+                                    </li>
+
+                                    <li class="padding_leftCourt">10. Et le contrat est enregistré dans le
+                                        backoffice.</li>
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+                        <!------- FIN BPMN -------------------------------------------------------------------->
 
 
                         <!--------- DEBUT REFERENTIEL DES EXIGENCES --------------------------------------------->
@@ -949,7 +1027,7 @@
 
 
                         <div class="Board_sousBoard--item">
-                            <h3>Rapport d'exécution de test</h3>
+                            <h3>Rapport d'exécution des tests</h3>
                             <div>
                                 <p class="padding_leftCourt">Campagne CAL</p>
                                 <div class="box5">
