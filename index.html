@@ -204,12 +204,22 @@
                             </ul>
                         </div>
 
+                        <div class="board_zero--chapitreSection">
+                            <a href="#suivi">
+                                <p class="board_zero--chapitreSectionTitre">02. Suivi et Contrôle des Tests</p>
+                            </a>
+                            <ul class="board_sousInfos">
+                                <li class="padding_leftCourt">Introduction
+                                </li>
+                            </ul>
+                        </div>
+
 
 
 
                         <div class="board_zero--chapitreSection">
                             <a href="#analyse">
-                                <p class="board_zero--chapitreSectionTitre">02. Analyse de Test</p>
+                                <p class="board_zero--chapitreSectionTitre">03. Analyse de Test</p>
                             </a>
                             <ul class="board_sousInfos">
                                 <li class="padding_leftCourt">Diagramme de cas d’utilisation</li>
@@ -223,7 +233,7 @@
 
                         <div class="board_zero--chapitreSection">
                             <a href="#conception">
-                                <p class="board_zero--chapitreSectionTitre">03. Conception des Tests</p>
+                                <p class="board_zero--chapitreSectionTitre">04. Conception des Tests</p>
                             </a>
                             <ul class="board_sousInfos">
                                 <li class="padding_leftCourt">Mise en place du référentiel
@@ -241,7 +251,7 @@
 
                         <div class="board_zero--chapitreSection">
                             <a href="#implementation">
-                                <p class="board_zero--chapitreSectionTitre">04. Implémentation des Tests</p>
+                                <p class="board_zero--chapitreSectionTitre">05. Implémentation des Tests</p>
                             </a>
                             <ul class="board_sousInfos">
                                 <li class="padding_leftCourt">Procédure de Test</li>
@@ -260,7 +270,7 @@
 
                         <div class="board_zero--chapitreSection">
                             <a href="#execution">
-                                <p class="board_zero--chapitreSectionTitre">05. Exécution des Tests</p>
+                                <p class="board_zero--chapitreSectionTitre">06. Exécution des Tests</p>
                             </a>
                             <ul class="board_sousInfos">
                                 <li class="padding_leftCourt">Campagne CAL</li>
@@ -276,8 +286,8 @@
 
 
                         <div class="board_zero--chapitreSection">
-                            <a href="#suivi">
-                                <p class="board_zero--chapitreSectionTitre">06. Suivi et Contrôle des Tests</p>
+                            <a href="#suiviresultats">
+                                <p class="board_zero--chapitreSectionTitre">Suivi et Contrôle des Tests : Résultats</p>
                             </a>
                             <ul class="board_sousInfos">
                                 <li class="padding_leftCourt">Indicateurs pour les Tests
@@ -441,7 +451,7 @@
 
 
 
-                <!--------- DEBUT BOARD DEUX : PLANIFICATION ----------------------------------------------------------->
+                <!--------- DEBUT BOARD DEUX : PROCESSUS DE TEST ----------------------------------------------------------->
                 <div class="board board_deux">
 
 
@@ -450,9 +460,13 @@
                     <div>
                         <p class="chapitreTitre">Processus de Test</p>
 
-
+                        <!--------- DEBUT BOARD TROIS PLANIFICATION DES TEST-------------------------------------------------------------------->
                         <div class="Board_sousBoard first">
                             <h2 id="planification">01. Planification des Tests</h2>
+
+                            <p>Input : Base de test</p>
+
+                            <p>Output : Plan de test</p></br>
 
                             <h3>Objectif : Documenter la façon d’organiser les tests sur le projet</h3>
 
@@ -507,6 +521,44 @@
                             </div>
 
                         </div>
+                        <!--------- FIN BOARD TROIS PLANIFICATION DES TEST-------------------------------------------------------------------->
+
+
+                        <!--------- DEBUT HUIT SUIVIT ET CONTROLE----------------------------------------------------------->
+                        <div class="Board_sousBoard">
+                            <h2 id="suivi">02. Suivi et contrôle des Tests</h2>
+
+                            <p>Input : Plan de test</p>
+
+                            <p>Output : Décisions</p>
+
+                            </br>
+
+                            <h3>Objectif : Suivre la mise en oeuvre de ce qui est prévu et rectifier si
+                                nécessaire.
+                            </h3>
+
+                            <br><br>
+                            <h3>Introduction
+                            </h3>
+
+                            <p>Production des métriques de test via le module « Pilotage » de Squash TM.</br>
+                                3 types d’indicateurs ont été mis en place :</br>
+                                <span class="padding_leftCourt">indicateurs pour les Exigences</span></br>
+                                <span class="padding_leftCourt">indicateurs pour les Tests</span></br>
+                                <span class="padding_leftCourt">indicateurs pour les Anomalies</span>
+                            </p>
+
+                            <br>
+
+                            <p>L'activité de suivit et controle des tests se déroule tout au long du processus de
+                                test.</br>
+                                Les résultats sont à retrouver apres la phase d'éxécution.
+                            </p>
+
+                        </div>
+                        <!--------- FIN HUIT SUIVIT ET CONTROLE------------------------------------------------------------->
+
 
                     </div>
                     <!--------- FIN BOARD DEUX ------------------------------------------------------------->
@@ -518,19 +570,19 @@
                     <div class="Board_sousBoard">
 
 
-                        <h2 id="analyse">02. Analyse de Test</h2>
+                        <h2 id="analyse">03. Analyse de Test</h2>
+
+                        <p>Input : Base de test</p>
+
+                        <p>Output : Conditions de test</p></br>
 
                         <h3>Objectif : Analyser la base de test pour identifier les conditions de test.
                         </h3>
 
-                        <p>Analyse des documents de la base de test pour identifier les condition de test.</br>
+                        <p>Analyse des documents de la base de test pour identifier les conditions de test.</br>
                             Le périmètre d’analyse étant le cas d’utilisation « Mettre en place un contrat de crédit
                             automobile ».</p>
 
-                        <p> En effet, ce cas d'utilisation est le plus important. Il consiste à simuler puis créer par
-                            la suite, si le client est d'accord, un contrat de crédit automobile. </br>Ceci peut être
-                            fait
-                            pour tout le monde (client existant ou nouveau client). </p>
 
 
 
@@ -670,79 +722,7 @@
 
 
 
-                            <!------- FIN BPMN TEXTE V1-------------------------------------------------------------------->
 
-
-                            <!-- DEBUT BPMN  TEXTE V2 --
-
-                            <img class="board_img board_img--item" src="assets/img/board_img--bpmnV2.png" alt="">
-
-                            <div class="board_zero--chapitreSection">
-                                <p>Il y a 3 acteurs :</p>
-                                <ul class="board_sousInfos">
-                                    <li class="padding_leftCourt">Le client</li>
-                                    <li class="padding_leftCourt">Le chargé de clientèle
-                                    </li>
-                                    <li class="padding_leftCourt">Le Backoffice</li>
-                                </ul>
-                            </div>
-                            <br>
-
-                            <div class="board_zero--chapitreSection">
-                                <p>Les étapes du processus :</p>
-                                <ul class="board_sousInfos liste_bpmn">
-                                    <li class="padding_leftCourt">01. Dans le backoffice, la connexion et
-                                        l’identification sont réalisées.</li> 
-
-                            <li class="padding_leftCourt">01. Le client fait une demande de crédit par
-                                simulation</li>
-
-                            <li class="padding_leftCourt">02. Le chargé de clientèle vérifie l'adéquation
-                                du besoin<br>
-                                Non, il n'y a pas d'adéquation, le processus s’arrête.</br>
-                                Oui, il y a adéquation, la simulation est réalisée, le processus est poursuivi.
-                            </li>
-
-                            <li class="padding_leftCourt">03. Le chargé de clientèle réalise la simulation.
-                            </li>
-
-
-                            <li class="padding_leftCourt">04. Le client est-il Intéressé par le resultat de la
-                                simulation ?<br>
-                                Non, le processus
-                                s’arrête.</br>
-                                Oui, le processus est poursuivi et le chargé de
-                                clientèle vérifie l’acceptabilité du dossier de crédit.
-                            </li>
-
-
-                            <li class="padding_leftCourt">05. Dossier acceptable ?<br>
-                                Non, le processus
-                                s’arrête.</br>
-                                Oui, le processus est poursuivi et le chargé de
-                                clientèle collecte les documents justificatifs, établit et édite 2 exemplaires
-                                du
-                                contrat de crédit et imprime le contrat.
-                            </li>
-
-                            <li class="padding_leftCourt">06. Contrat signé ?</br>
-                                Non, le processus prend fin</br>
-                                Oui, le processus est poursuivi
-                            </li>
-
-                            <li class="padding_leftCourt">
-                                07. Le chargée de clientèle numérise le contrat
-                            </li>
-
-                            <li class="padding_leftCourt">08. Et le contrat est enregistré dans le
-                                backoffice.</li>
-                            </ul>
-                        </div>
-
-
-
-                    </div>
-                    ------ FIN BPMN -------------------------------------------------------------------->
 
 
                             <!--------- DEBUT TEST STATIQUE --------------------------------------------------------->
@@ -815,7 +795,11 @@
 
                         <!--------- DEBUT QUATRE CONCEPTION----------------------------------------------------------->
                         <div class="Board_sousBoard">
-                            <h2 id="conception">03. Conception des Tests</h2>
+                            <h2 id="conception">04. Conception des Tests</h2>
+
+                            <p>Input : Conditions de test</p>
+
+                            <p>Output : Cas de test de haut niveau</p></br>
 
                             <h3>Objectif : Concevoir les tests, données et environnements.
                             </h3>
@@ -931,7 +915,18 @@
 
                         <!--------- DEBUT CINQ IMPLEMENTATION----------------------------------------------------------->
                         <div class="Board_sousBoard">
-                            <h2 id="implementation">04. Implémentation des Tests</h2>
+                            <h2 id="implementation">05. Implémentation des Tests</h2>
+
+                            <p>Input : </br>
+                                <span class="padding_leftCourt">Cas de test de haut niveau</span>
+
+                            </p>
+
+                            <p>Output :</br>
+                                <span class="padding_leftCourt">Procédure de test</span></br>
+                                <span class="padding_leftCourt">Suite de test</span></br>
+                                <span class="padding_leftCourt">Prérequis d'éxécution</span>
+                            </p></br>
 
 
                             <h3>Objectif : Se mettre en situation d’exécuter les tests.
@@ -1075,7 +1070,22 @@
 
                         <!--------- DEBUT SEPT EXECUTION----------------------------------------------------------->
                         <div class="Board_sousBoard">
-                            <h2 id="execution">05. Exécution des Tests</h2>
+                            <h2 id="execution">06. Exécution des Tests</h2>
+
+
+
+                            <p>Input :</br>
+                                <span class="padding_leftCourt">Procédure de test</span></br>
+                                <span class="padding_leftCourt">Suite de test</span></br>
+                                <span class="padding_leftCourt">Prérequis d'éxécution</span>
+                            </p>
+
+                            <p>Output : </br>
+                                <span class="padding_leftCourt">Status des test</span>
+                            </p>
+
+
+                            </br>
 
                             <h3>Objectif : Exécuter, enregistrer les résultats et signaler les défauts.
                             </h3>
@@ -1207,18 +1217,7 @@
 
                         <!--------- DEBUT HUIT SUIVIT ET CONTROLE----------------------------------------------------------->
                         <div class="Board_sousBoard">
-                            <h2 id="suivi">06. Suivi et contrôle des Tests</h2>
-
-                            <h3>Objectif : Suivre la mise en oeuvre de ce qui est prévu et rectifier si
-                                nécessaire.
-                            </h3>
-
-                            <p>Production des métriques de test via le module « Pilotage » de Squash TM.</br>
-                                Au moins 3 types d’indicateurs : indicateurs pour les Exigences, les Tests & les
-                                Anomalies.
-                            </p>
-                            <br><br>
-
+                            <h2 id="suiviresultats">Suivi et contrôle des Tests - Résultats</h2>
 
 
                             <div class="Board_sousBoard--item first">
@@ -1478,8 +1477,8 @@
 
 
 
-
-                    <!--====== FIN BOARD ==================================================================================-->
+                </div>
+                <!--====== FIN BOARD ==================================================================================-->
 
 
         </section>
