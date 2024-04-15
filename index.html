@@ -59,18 +59,18 @@
 
 
                         <p>
-                            "Dans le cadre de son positionnement sur le marché de crédit automobile, la » BANQUE-M »
+                            "Dans le cadre de son positionnement sur le marché de crédit automobile, la BANQUE-M
                             souhaite mettre en place une solution de crédit automobile.
                         </p>
                         <p>
                             Vous faites partie d’une équipe QA chargé de la réalisation des Tests de l’application
-                            crédit auto soutenue par la « BANQUE-M ».
+                            crédit auto soutenue par la BANQUE-M.
                             Le développement de la solution crédit auto est réalisé en Cycle Séquentiel « V » et votre
                             équipe QA est chargé de la réalisation des Tests Système, tests de bout en bout.
                         </p>
                         <p>
                             Après la réalisation du plan de test maître par le Test Manager, il vous est demandé la
-                            réalisation des activités de Tests Système (manuel) de l'application Web crédit auto. "
+                            réalisation des activités de Tests Système (manuel) de l'application Web crédit auto."
                         </p>
 
                         <br><br>
@@ -456,7 +456,16 @@
 
                             <h3>Objectif : Documenter la façon d’organiser les tests sur le projet</h3>
 
-                            <p>Ici, le Plan de test Maitre avait déjà été réalisé par le Test Manager.</p>
+                            <p>Ici, le Plan de test Maitre avait déjà été réalisé par le Test Manager.</br>
+                                Le périmètre d’analyse étant le cas d’utilisation « Mettre en place un contrat de crédit
+                                automobile ».</p>
+
+                            <p> En effet, ce cas d'utilisation est le plus important. Il consiste à simuler puis créer
+                                par
+                                la suite, si le client est d'accord, un contrat de crédit automobile. </br>Ceci peut
+                                être
+                                fait
+                                pour tout le monde (client existant ou nouveau client). </p>
                             <p class="margin_bottom_0"> Il ne nous
                                 restait plus qu’à réaliser le Plan de Test par Niveau de Test, à savoir
                                 identifier les critères d’entrée et les critères de sortie de notre niveau de test, le
@@ -848,6 +857,30 @@
                                     alt="">
                             </div>
 
+                            <div class="Board_sousBoard--item">
+                                <h3 class="margin_top_30">Traçabilité </h3>
+                                <p>Les cas de tests sont structurés grâce au concept de la traçabilité
+                                    bidirectionnelle, c’est-à-dire que chaque exigence est liée aux cas de tests qui la
+                                    vérifient, et que chaque cas de test est lié aux exigences qu’il couvre. </p>
+                                <p>Cela permet de vérifier que, pendant la phase de conception, des tests ont bien été
+                                    conçus pour toutes les exigences
+                                </p>
+                                <p></p>
+                                <br>
+
+                                <p>Exemple : Le cas de test « Montant_Achat_Véhicule_Valide_PEV » qui est lié à
+                                    l’exigence « Montant_Achat_Véhicule »
+                                </p>
+                                <p>Depuis onglet Exigence :</p>
+                                <img class="board_img board_img--itemCourt"
+                                    src="assets/img/board_img--tracabiliteexigence.png" alt="">
+                                </br></br></br>
+
+                                <p>Depuis onglet Cas de Test :</p>
+                                <img class="board_img board_img--itemCourt"
+                                    src="assets/img/board_img--tracabilitecasdetest.png" alt="">
+                            </div>
+
 
 
                             <div class="Board_sousBoard--item">
@@ -856,19 +889,27 @@
                                 <ul>
                                     <li class="padding_leftCourt">Table de décision </li>
                                     <li class="padding_leftCourt">Partition d’Équivalence </li>
-                                    <li class="padding_leftCourt">Analyse des valeurs limites, a 1 ou 2 valeurs</li>
+                                    <li class="padding_leftCourt">Analyse des valeurs limites a 1 ou 2 valeurs</li>
                                 </ul>
                             </div>
 
                             <div class="Board_sousBoard--item">
                                 <h3 class="margin_top_30">Jeux de données logiques</h3>
-                                <p>Ici, pour la conception des cas de tests de haut niveau, des données de test
-                                    logiques ont
-                                    été préparées, dans les options "Parametres et jeux de données" des pas de test
-                                    des cas
-                                    de test.</p>
-                                <br>
-                                <img class="board_img  img_middle" src="assets/img/board_img--jdl.png" alt="">
+                                <p>Les cas de tests sont conçus en identifiant les données de tests dont on aura besoin
+                                    pour les exécuter mais sans préparer ces données de test. </p>
+                                </br>
+                                <p>Exemple : Pour le cas de test « Montant_Achat_Véhicule_Valide_PEV »</p>
+                                <p>
+                                    Nous avons identifiés le test :
+                                    PK02.MF01.F01.Ex02.CT01-Montant_Achat_Véhicule_Valide_PEV</br>
+                                    Nous avons identifié le besoin en données de test : un montant compris entre 6250€
+                                    et 50 000€</br>
+                                    (D’après la règle de gestion de l’exigence)</p>
+                                <img class="board_img board_img--itemCourt" src="assets/img/board_img--rg.png" alt="">
+                                <p>Mais à ce stade, ces entiers positifs ne sont pas précisés, ça peut être n’importe
+                                    quels entiers positifs compris entre 6250€ et 50 000€. </br>Ils seront précisés lors
+                                    de
+                                    la phase d’implémentation.</p>
                             </div>
 
                             <div class="Board_sousBoard--item">
