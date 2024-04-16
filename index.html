@@ -115,31 +115,34 @@
                                 <p>4 Testeurs</p>
                             </div>
 
+                            <div class="droite_item">
+                                <h3>Domaine</h3>
+                                <p>Bancaire</p>
+                            </div>
+
+
+
+
                             <div class="gauche_item">
                                 <h3 class="gauche_item--titre">Année</h3>
-                                <p>2024</p>
+                                <p>2023 - 2024</p>
                             </div>
+
+
+                        </div>
+                        <div class="introduction_infos--droite">
 
                             <div class="droite_item">
                                 <h3>Type de Test</h3>
                                 <p>Manuel</p>
                             </div>
 
-                        </div>
-                        <div class="introduction_infos--droite">
-
                             <div class="gauche_item">
                                 <h3>Niveau de Test</h3>
                                 <p>Système</p>
                             </div>
 
-
-                            <div class="droite_item">
-                                <h3>Total Exigences</h3>
-                                <p>27</p>
-                            </div>
-
-                            <div class="droite_item">
+                            <!-- <div class="droite_item">
                                 <h3>Total Cas de Tests</h3>
                                 <p>91</p>
                             </div>
@@ -147,7 +150,7 @@
                             <div class="droite_item">
                                 <h3>Total Suites de Tests</h3>
                                 <p>30</p>
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>
@@ -256,8 +259,7 @@
                             <ul class="board_sousInfos">
                                 <li class="padding_leftCourt">Procédure de Test</li>
                                 <li class="padding_leftCourt">Campagnes</li>
-                                <li class="padding_leftCourt">Campagne CAL</li>
-                                <li class="padding_leftCourt">Campagne Fonctionnelle </li>
+                                <li class="padding_leftCourt">Scénario de test</li>
                                 <li class="padding_leftCourt">Jeux de
                                     données physiques</li>
                                 <li class="padding_leftCourt">Environnement de test</li>
@@ -273,8 +275,7 @@
                                 <p class="board_zero--chapitreSectionTitre">06. Exécution des Tests</p>
                             </a>
                             <ul class="board_sousInfos">
-                                <li class="padding_leftCourt">Campagne CAL</li>
-                                <li class="padding_leftCourt">Campagne Fonctionnelle</li>
+                                <li class="padding_leftCourt">Scénario de test détaillés</li>
                                 <li class="padding_leftCourt">Anomalies</li>
                                 <li class="padding_leftCourt">Rapport d'exécution des tests</li>
 
@@ -544,8 +545,8 @@
 
                             <p>Production des métriques de test via le module « Pilotage » de Squash TM.</br>
                                 3 types d’indicateurs ont été mis en place :</br>
-                                <span class="padding_leftCourt">indicateurs pour les Exigences</span></br>
                                 <span class="padding_leftCourt">indicateurs pour les Tests</span></br>
+                                <span class="padding_leftCourt">indicateurs pour les Exigences</span></br>
                                 <span class="padding_leftCourt">indicateurs pour les Anomalies</span>
                             </p>
 
@@ -554,7 +555,8 @@
                             <p>L'activité de suivit et controle des tests se déroule tout au long du processus de
                                 test.</br>
                                 Les résultats sont à retrouver apres la phase d'Exécution des Tests, dans la partie
-                                <span><a href="#suiviresultats">"Suivi et contrôle des Tests - Résultats"</a></span>.
+                                <span><a href="#suiviresultats">"Suivi et contrôle des Tests - Résultats"</a></span>
+                                .
                             </p>
 
                         </div>
@@ -900,9 +902,8 @@
                             <div class="Board_sousBoard--item">
                                 <h3 class="margin_top_30">
                                     Environnement de test</h3>
-                                <p>À cette étapes, il faut concevoir l'environnement de test, mais dans notre cas,
-                                    il était
-                                    déjà conçu .</p>
+                                <p>À cette étape, il faut concevoir l'environnement de test, mais dans notre cas,
+                                    c'était déja fait puisque l'application web etait déja accésible.</p>
                             </div>
 
 
@@ -980,7 +981,9 @@
 
                             <div class="Board_sousBoard--item">
                                 <h3>Campagnes</h3>
-                                <p>Dans le logiciel Squash, onglet « Campagnes », 2 campagnes ont été préparées :
+                                <p>Dans le logiciel Squash, onglet « Campagnes », 2 campagnes ont été préparées pour
+                                    l'éxecution des scéénarios de
+                                    test :
                                 </p>
                                 <ul>
                                     <li class="padding_leftCourt">Campagne CAL (Conditions Avant Livraison)</li>
@@ -998,7 +1001,8 @@
 
 
                             <div class="Board_sousBoard--item">
-                                <h3>Campagne CAL</h3>
+                                <h3>Scénarios de test</h3>
+                                <p class="indicateurs">Scénarios de test de la Campagne CAL</p>
                                 <p>Campagne CAL ou Test de fumée (Smoke Testing).</br>
                                     Test préliminaire effectué pour vérifier les fonctionnalités de base de
                                     l’application.
@@ -1009,8 +1013,8 @@
                             </div>
 
 
-                            <div class="Board_sousBoard--item">
-                                <h3>Campagne Fonctionnelle</h3>
+                            <div class="margin_top_5">
+                                <p class="indicateurs">Scénarios de test de la Campagne Fonctionnelle</p>
                                 <p>Campagne principale, test de bout en bout (end to end).</br>
                                     On y retrouve les suites de cas test de bas niveau, relatives au périmètre de
                                     test du
@@ -1041,7 +1045,9 @@
 
                             <div class="Board_sousBoard--item">
                                 <h3>Environnement de Test</h3>
-                                <p>Dans notre cas, la validation de l’environnement de test avait déjà été réalisée.
+                                <p>Ici nous avons préparés l’exécution des tests en vérifiant que
+                                    l’environnement de test, les outils de test, les données de test et les identifiant
+                                    de connexion des profils utilisateur étaient bien disponible et accessibles.
                                 </p>
                             </div>
 
@@ -1099,9 +1105,10 @@
 
 
                             <div class="Board_sousBoard--item first">
-                                <h3>Campagne CAL</h3>
+                                <h3>Scénario de test détaillés</h3>
+                                <p class="indicateurs">Campagne CAL</p>
                                 <p>Exécution des suites de test de la compagne CAL</br>
-                                    Nous avons testé les fonctionnalités basiques d’authentification, pour nous
+                                    Ici, nous avons testé les fonctionnalités basiques d’authentification, pour nous
                                     assurer que
                                     le système réagissait comme attendu.</p>
                                 <br>
@@ -1112,8 +1119,8 @@
 
 
 
-                            <div class="Board_sousBoard--item">
-                                <h3>Campagne Fonctionnelle</h3>
+                            <div class="margin_top_5">
+                                <p class="indicateurs ">Campagne Fonctionnelle</p>
                                 <p>Exécution des suites de test de la compagne fonctionnelle, relatives au périmètre
                                     de test
                                     du 1er cas d’utilisation : « UC1-Mettre en place un contrat de crédit
@@ -1144,7 +1151,7 @@
                             <div class="Board_sousBoard--item">
                                 <h3>Rapport d'exécution des tests</h3>
                                 <div>
-                                    <p class="padding_leftCourt">Campagne CAL</p>
+                                    <p class="padding_leftCourt fontweight500">Campagne CAL</p>
                                     <div class="box5">
                                         <div class="boxin5 margin_top_ecranmobile">
                                             <!-- <p>Ecran Simulation</p> -->
@@ -1168,7 +1175,7 @@
                                 </div>
                                 <br><br><br><br><br><br>
                                 <div>
-                                    <p class="padding_leftCourt">Campagne Fonctionnelle</p>
+                                    <p class="padding_leftCourt fontweight500">Campagne Fonctionnelle</p>
                                     <div class="box5">
                                         <div class="boxin5 margin_top_ecranmobile">
                                             <!-- <p>Ecran Simulation</p> -->
@@ -1190,7 +1197,7 @@
                                 </div>
                                 <br><br><br><br><br><br>
                                 <div>
-                                    <p class="padding_leftCourt">Rapport d"anomalie</p>
+                                    <p class="padding_leftCourt fontweight500">Rapport d"anomalie</p>
                                     <img src="assets/img/board_img--raportanomalie.png" alt="">
                                     <br><br>
                                     <p>Nous avons 14 types différents d'anomalies répartis parmi :</p>
@@ -1234,7 +1241,8 @@
                                     <div class="board_infos">
 
 
-                                        <p>Répartition des Cas de Test par Type de fonctionnalité</p>
+                                        <p class="fontweight500">Répartition des Cas de Test par Type de fonctionnalité
+                                        </p>
                                         <img class="board_img board_img--itemCourt img_type_fonctionnalite"
                                             src="assets/img/board_img--fonctionnalite.png" alt="">
 
@@ -1244,7 +1252,7 @@
                                         <br><br> <br><br> <br>
 
 
-                                        <p>Campagne fonctionnelle <br>
+                                        <p class="fontweight500">Campagne fonctionnelle <br>
                                             Inventaire des tests par suite de tests : Itération 1</p>
 
                                         <img class="board_img board_img--itemCourt"
@@ -1260,7 +1268,7 @@
                                         <br><br> <br><br> <br>
 
 
-                                        <p>Répartition des suites de Tests par criticité
+                                        <p class="fontweight500">Répartition des suites de Tests par criticité
                                         </p>
 
                                         <img class="board_img board_img--itemCourt img_exe_test"
@@ -1301,7 +1309,7 @@
 
                                 <div class="indicateurs">
                                     <!-- <p>Couverture des Exigences par Ecrans</br>(Statut d'execution pour chaque écran)</p> -->
-                                    <p>Statut d'exécution des Exigences pour chaque écran</p>
+                                    <p class="fontweight500">Statut d'exécution des Exigences pour chaque écran</p>
 
 
 
@@ -1362,7 +1370,7 @@
                                 <h3>Indicateurs pour les Anomalies</h3>
 
                                 <div class="board_infos margin_top_2">
-                                    <p class="padding_left ano">Rapport des anomalies</p>
+                                    <p class="padding_left ano fontweight500">Rapport des anomalies</p>
                                     <img class="board_img board_img--itemCourt"
                                         src="assets/img/board_img--anomalie1.png" alt="">
                                     <br><br>
@@ -1372,7 +1380,7 @@
 
                                 <div class="indicateurs">
 
-                                    <p>Anomalies par severité</p>
+                                    <p class="fontweight500">Anomalies par severité</p>
                                     <img class="board_img board_img--itemCourt img_anomalie"
                                         src="assets/img/board_img--anomalie2.png" alt="">
                                 </div>
@@ -1405,7 +1413,7 @@
 
                                 <p>Les tests ont été structurés sous la forme de
                                     Campagne Fonctionnelle.</br>
-                                    La campagne fonctionnelle a été déroulée en 1 itération</br>
+                                    La campagne a été déroulée en 1 itération</br>
                                     Lors de cette itération nous avons obtenu : </p>
                                 <ul class="board_sousInfos">
                                     <li class="padding_leftCourt">100% de couverture des exigences </li>
