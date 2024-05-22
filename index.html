@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON ------------------------------->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- REMIX --------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS ------------------------------->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Crédit Auto</title>
+</head>
+
+
+<body>
+
+    <main class="main">
+        <section class="acheter section" id="acheter">
+
+            <!--------- DEBUT MAIN_HEADER ---------------------------------------------------------->
+            <div class="main_header">
+
+                <h1 class="main_header--title">Crédit Auto</h1>
+
+                <h2 class="title">Cycle Séquentiel V, Squash TM et Mantis BT</h2>
+
+                <div>
+                    <a href="https://kayancodes.github.io/portfolio/#realisations"
+                        class="button button--flex buttonBack">RETOUR</a>
+                </div>
+            </div>
+            <!--------- DEBUT MAIN_HEADER ---------------------------------------------------------->
+
+
+
+
+            <div class="main__body">
+
+                <!--====== DEBUT INTRO UN ==============================================================================-->
+                <div class="introduction introduction_un">
+
+                    <img class="introduction_img introduction_img--un" src="assets/img/introduction_img--un.png" alt="">
+
+                    <div class="introduction_texte">
+                        <p>
+                            Projet réalisé en 2024, pendant mon parcours de formation "POE Testeur Logiciel", dans le
+                            centre M2I Formation.
+                        </p>
+
+                        <p>Le projet consiste en la réalisation des activités de Test Système de la solution web Crédit
+                            Auto, dont voici la consigne :</p>
+
+
+                        <p>
+                            "Dans le cadre de son positionnement sur le marché de crédit automobile, la BANQUE-M
+                            souhaite mettre en place une solution de crédit automobile.
+                        </p>
+                        <p>
+                            Vous faites partie d’une équipe QA chargé de la réalisation des Tests de l’application
+                            crédit auto soutenue par la BANQUE-M.
+                            Le développement de la solution crédit auto est réalisé en Cycle Séquentiel « V » et votre
+                            équipe QA est chargé de la réalisation des Tests Système, tests de bout en bout.
+                        </p>
+                        <p>
+                            Après la réalisation du plan de test maître par le Test Manager, il vous est demandé la
+                            réalisation des activités de Tests Système (manuel) de l'application Web crédit auto."
+                        </p>
+
+                        <br><br>
+                        <h3>Périmètre de Test</h3>
+                        <p>Le 1er cas d’utilisation : </br>UC1-Mettre en place un contrat de crédit
+                            automobile. </p>
+
+
+                        <!--------- DEBUT PROCESSUS DE TEST SUIVI ----------------------------------------------------------->
+                        <h3 class="margin_top">Environnement technologique</h3>
+                        <p>
+                            Squash TM, Mantis BT, UML, Draw.io, Bizagi, Xmind, Windows, MS Office, MacOS
+                        </p>
+                        <!--------- FIN PROCESSUS DE TEST SUIVI ------------------------------------------------------------->
+
+
+
+
+                        <!--------- DEBUT BASE DE TEST ----------------------------------------------------------->
+                        <h3 class="margin_top">Base de Test</h3>
+                        <p>
+                            01 - Expression du Besoin-V2.0</br>
+                            02 - Projet Crédit Auto - Maquettage-V2.0</br>
+                            03 - Dossier des exigences-V2.0</br>
+                            04 - Fiche Use Case - Mettre en place un contrat de crédit automobile-V2.0</br>
+                            05 - Accès_Environnement_de_Test</br>
+                        </p>
+                        <!--------- FIN BASE DE TEST ------------------------------------------------------------->
+                    </div>
+
+                    <!--------- DEBUT INFO SIDE ----------------------------------------------------------->
+                    <div class="introduction_infos">
+                        <div class="introduction_infos--gauche">
+
+                            <div class="gauche_item">
+                                <h3>Rôle</h3>
+                                <p>Testeur</p>
+                            </div>
+
+                            <div class="gauche_item">
+                                <h3 class="gauche_item--titre">Effectif du groupe</h3>
+                                <p>4 Testeurs</p>
+                            </div>
+
+                            <div class="droite_item">
+                                <h3>Domaine</h3>
+                                <p>Bancaire</p>
+                            </div>
+
+
+
+
+                            <div class="gauche_item">
+                                <h3 class="gauche_item--titre">Année</h3>
+                                <p>2023 - 2024</p>
+                            </div>
+
+
+                        </div>
+                        <div class="introduction_infos--droite">
+
+                            <div class="droite_item">
+                                <h3>Type de Test</h3>
+                                <p>Manuel</p>
+                            </div>
+
+                            <div class="gauche_item">
+                                <h3>Niveau de Test</h3>
+                                <p>Système</p>
+                            </div>
+
+                            <!-- <div class="droite_item">
+                                <h3>Total Cas de Tests</h3>
+                                <p>91</p>
+                            </div>
+
+                            <div class="droite_item">
+                                <h3>Total Suites de Tests</h3>
+                                <p>30</p>
+                            </div> -->
+
+                        </div>
+                    </div>
+                    <!--------- FIN INFO SIDE ----------------------------------------------------------->
+
+                </div>
+                <!--====== FIN INTRO UN ================================================================================-->
+
+
+
+
+
+
+
+                <!--====== DEBUT BOARD =====================================================================================================-->
+
+
+
+                <!--------- DEBUT BOARD ZERO : SOMMAIRE ----------------------------------------------------------->
+                <div class="board board_zero sommaire">
+
+                    <a href="#sommaire" id="sommaire">
+                        <h1>Sommaire</h1>
+                        <br><br>
+                    </a>
+
+                    <div class="board_zero--chapitre">
+                        <h3 class="board_zero--chapitreTitre">Présentation du projet</h3>
+
+                        <div>
+                            <a href="#contexte">
+                                <p class="board_zero--chapitreSectionTitre">01. Contexte</p>
+                            </a>
+
+                            <a href="#perimetre">
+                                <p class="board_zero--chapitreSectionTitre">02. Périmètre</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <div class="board_zero--chapitre margin_bottom_0">
+                        <h3 class="board_zero--chapitreTitre">Processus de test</h3>
+
+                        <div class="board_zero--chapitreSection margin_top_0">
+                            <a href="#planification">
+                                <p class="board_zero--chapitreSectionTitre">01. Planification des Tests</p>
+                            </a>
+                            <ul class="board_sousInfos">
+                                <li class="padding_leftCourt">Critères d'entrée et de sortie</li>
+                                <li class="padding_leftCourt">Choix des outils</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="board_zero--chapitreSection">
+                            <a href="#suivi">
+                                <p class="board_zero--chapitreSectionTitre">02. Suivi et Contrôle des Tests</p>
+                            </a>
+                            <ul class="board_sousInfos">
+                                <li class="padding_leftCourt">Introduction
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+
+                        <div class="board_zero--chapitreSection">
+                            <a href="#analyse">
+                                <p class="board_zero--chapitreSectionTitre">03. Analyse de Test</p>
+                            </a>
+                            <ul class="board_sousInfos">
+                                <li class="padding_leftCourt">Diagramme de cas d’utilisation</li>
+                                <li class="padding_leftCourt">Modélisation BPMN</li>
+                                <li class="padding_leftCourt">Revue documentaire</li>
+                                <li class="padding_leftCourt">Référentiel des exigences</li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="board_zero--chapitreSection">
+                            <a href="#conception">
+                                <p class="board_zero--chapitreSectionTitre">04. Conception des Tests</p>
+                            </a>
+                            <ul class="board_sousInfos">
+                                <li class="padding_leftCourt">Mise en place du référentiel
+                                </li>
+                                <li class="padding_leftCourt">Tracabilité et Couverture des exigences</li>
+                                <li class="padding_leftCourt">Conception des cas de test</li>
+                                <li class="padding_leftCourt">Jeux de
+                                    données logiques</li>
+                                <li class="padding_leftCourt">Environnement de test</li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="board_zero--chapitreSection">
+                            <a href="#implementation">
+                                <p class="board_zero--chapitreSectionTitre">05. Implémentation des Tests</p>
+                            </a>
+                            <ul class="board_sousInfos">
+                                <li class="padding_leftCourt">Procédure de Test</li>
+                                <li class="padding_leftCourt">Campagnes</li>
+                                <li class="padding_leftCourt">Scénarios de test</li>
+                                <li class="padding_leftCourt">Jeux de
+                                    données physiques</li>
+                                <li class="padding_leftCourt">Environnement de test</li>
+                                <li class="padding_leftCourt">Critères d'entrée</li>
+                            </ul>
+                        </div>
+
+
+
+
+                        <div class="board_zero--chapitreSection">
+                            <a href="#execution">
+                                <p class="board_zero--chapitreSectionTitre">06. Exécution des Tests</p>
+                            </a>
+                            <ul class="board_sousInfos">
+                                <li class="padding_leftCourt">Scénarios de test détaillés</li>
+                                <li class="padding_leftCourt">Anomalies</li>
+                                <li class="padding_leftCourt">Rapport d'exécution des tests</li>
+
+                                <!-- <li class="padding_leftCourt">Répartition des scénarios de
+                                    Test</li> -->
+                            </ul>
+                        </div>
+
+
+
+                        <div class="board_zero--chapitreSection">
+                            <a href="#suiviresultats">
+                                <p class="board_zero--chapitreSectionTitre">Suivi et Contrôle des Tests : Résultats</p>
+                            </a>
+                            <ul class="board_sousInfos">
+                                <li class="padding_leftCourt">Indicateurs pour les Tests
+                                </li>
+                                <li class="padding_leftCourt">Indicateurs pour les Exigences
+                                </li>
+                                <li class="padding_leftCourt">Indicateurs pour les Anomalies
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="board_zero--chapitreSection">
+                            <a href="#cloture">
+                                <p class="board_zero--chapitreSectionTitre">07. Clôture des Test</p>
+                            </a>
+                            <ul class="board_sousInfos">
+                                <li class="padding_leftCourt">Bilan de Synthèse</li>
+                                <li class="padding_leftCourt">Décision : « Go/NoGo »</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+                <!--------- FIN BOARD ZERO : SOMMAIRE ------------------------------------------------------------->
+
+
+
+
+
+
+
+                <!--------- DEBUT BOARD ZERO : SOMMAIRE ------------------------------------------------------------->
+
+                <img class="board_img board_img--header" src="assets/img/board_img--un.png" alt="">
+
+                <!--------- FIN IMG INTER BOARDS ------------------------------------------------------------------->
+
+
+
+
+
+
+
+                <!--------- DEBUT BOARD UN : CONTEXT  ----------------------------------------------------------->
+                <div class="board board_un">
+                    <p class="chapitreTitre">Présentation du projet</p>
+
+
+
+                    <div class="Board_sousBoard presentation">
+
+                        <h2 id="contexte">01. Contexte</h2>
+
+                        <div class="board_infos margin_top_30">
+                            <p>BANQUE-M présentait un faible taux de pénétration dans le secteur de l’automobile (crédit
+                                automobile). Pour y remédier, la banque a décidé de lancer le projet « Crédit Auto ».
+                            </p>
+                        </div>
+
+
+
+                        <div class="board_infos margin_top_30">
+                            <h3>Les ambitions de l'application :</h3>
+                            <ul class="board_sousInfos">
+                                <li class="padding_leftCourt">Repositionner l’activité de
+                                    BANQUE-M dans le domaine du Crédit Automobile</li>
+                                <li class="padding_leftCourt">Elargir la gamme de produits
+                                    BANQUE-M</li>
+                                <li class="padding_leftCourt">Prendre des parts de marché à
+                                    ses concurrents actuels</li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="board_infos margin_bottom_0">
+                            <h3>Les objectifs de l'application :</h3>
+                            <ul class="board_sousInfos">
+                                <li class="padding_leftCourt">Proposer un produit permettant
+                                    de financer l'achat d'un véhicule neuf de
+                                    catégorie A
+                                    ou B</li>
+                                <li class="padding_leftCourt">Offrir des locations de
+                                    véhicule automobile à tarifs préférentiels et selon
+                                    les conditions de durée et de fréquence définies.
+                                    <!-- par BANQUE-M (à travers une société
+                                    partenaire de l’opération Crédit Auto) -->
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- <div class="board margin_bottom_0"> -->
+                    <div class="Board_sousBoard presentation">
+                        <div>
+                            <h2 id="perimetre">02. Périmètre</h2>
+                            <div class="board_infos board_infos--un margin_bottom_0">
+                                <p>"Crédit Auto" sera destiné à la clientèle des particuliers résidant en France. </br>
+                                    La commercialisation s'effectuera via les chargés de clientèle en agence.</p>
+                                </br>
+                                <p>Un client pourra :</p>
+
+
+                                <div class="box4">
+                                    <div class="boxin">
+                                        <img src="assets/img/box_img--boxin_financement.png" alt="">
+                                        <p>Financer l'achat d'un véhicule de catégorie A ou B</p>
+                                    </div>
+
+                                    <div class="boxin">
+                                        <img src="assets/img/box_img--boxin_montantcredit.png" alt="">
+                                        <p>Le montant du crédit devra représenter au minimum 80% du prix du véhicule à
+                                            régler par le client avec un plancher de 5.000€</p>
+                                    </div>
+
+                                    <div class="boxin">
+                                        <img src="assets/img/box_img--boxin_montantplafon.png" alt="">
+                                        <p>Le montant plafond du crédit autorisé est de 40.000€</p>
+                                    </div>
+
+                                    <div class="boxin margin_bottom_0">
+                                        <img src="assets/img/box_img--boxin_periode.png" alt="">
+                                        <p>Le crédit s'effectuera sur une période de 12 mois minimum et 48 mois maximum
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- 
+                                <img class="board_img board_img--100 margin_bottom_0"
+                                    src="assets/img/board_img--deux.png" alt=""> -->
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+                <!--------- FIN BOARD UN : CONTEXT ------------------------------------------------------------->
+
+
+
+
+
+                <!--------- DEBUT BOARD ZERO : SOMMAIRE ------------------------------------------------------------->
+
+                <img class="board_img board_img--header" src="assets/img/board_img--trois.png" alt="">
+
+                <!--------- FIN IMG INTER BOARDS ------------------------------------------------------------------->
+
+
+
+
+                <!--------- DEBUT BOARD DEUX : PROCESSUS DE TEST ----------------------------------------------------------->
+                <div class="board board_deux">
+
+
+
+
+                    <div>
+                        <p class="chapitreTitre">Processus de Test</p>
+
+                        <!--------- DEBUT BOARD TROIS PLANIFICATION DES TEST-------------------------------------------------------------------->
+                        <div class="Board_sousBoard first">
+                            <h2 id="planification">01. Planification des Tests</h2>
+
+                            <p>Input : Base de test</p>
+
+                            <p>Output : Plan de test</p></br>
+
+                            <h3>Objectif : Documenter la façon d’organiser les tests.</h3>
+
+                            <p>Ici, le Plan de test Maitre avait déjà été réalisé par le Test Manager.</br>
+                                Le périmètre de test étant le cas d’utilisation « Mettre en place un contrat de crédit
+                                automobile ».</p>
+
+                            <p> En effet, ce cas d'utilisation est le plus important. Il consiste à simuler puis créer
+                                par
+                                la suite, si le client est d'accord, un contrat de crédit automobile. </br>Ceci peut
+                                être
+                                fait
+                                pour tout le monde (client existant ou nouveau client). </p>
+                            <p class="margin_bottom_0"> En tant que testeur, il ne nous
+                                restait plus qu’à réaliser le Plan de Test par Niveau de Test, à savoir
+                                identifier les critères d’entrée et les critères de sortie de notre niveau de test, le
+                                test
+                                Système, puis à
+
+                                choisir les outils pour mener à bien nos activités de test.</p>
+
+
+                            <div class="Board_sousBoard--item first">
+                                <h3 class="margin_bottom_30">Critères d’entrée et de sortie</h3>
+                                <p class="margin_bottom_0">Critères d'entrée</p>
+                                <img class="board_img board_img--itemCourt img_cecs" src="assets/img/board_img--CE.png"
+                                    alt="">
+                                </br> </br>
+                                <p class="margin_bottom_0">Critères de sortie</p>
+                                <img class="board_img board_img--itemCourt margin_bottom_0 img_cecs"
+                                    src="assets/img/board_img--CS.png" alt="">
+                            </div>
+
+
+                            <div class="Board_sousBoard--item first">
+                                <h3>Choix des outils :<h3>
+                                        <ul class="board_sousInfos">
+                                            <li class="padding_leftCourt">Squash TM : Outil
+                                                de
+                                                gestion des Tests</li>
+                                            <li class="padding_leftCourt">Mantis BT: Outil
+                                                de
+                                                gestion des anomalies</li>
+                                            <li class="padding_leftCourt">Bizagi: Outil de
+                                                modélisation des processus Métier</li>
+                                            <li class="padding_leftCourt">Xmind: Outil de
+                                                Mind-Mapping</li>
+                                            <li class="padding_leftCourt">Draw.io: logiciel
+                                                de
+                                                dessin graphique</li>
+                                        </ul>
+                            </div>
+
+                        </div>
+                        <!--------- FIN BOARD TROIS PLANIFICATION DES TEST-------------------------------------------------------------------->
+
+
+                        <!--------- DEBUT HUIT SUIVIT ET CONTROLE----------------------------------------------------------->
+                        <div class="Board_sousBoard">
+                            <h2 id="suivi">02. Suivi et contrôle des Tests</h2>
+
+                            <p>Input : Plan de test</p>
+
+                            <p>Output : Décisions</p>
+
+                            </br>
+
+                            <h3>Objectif : Suivre la mise en oeuvre de ce qui est prévu et rectifier si
+                                nécessaire.
+                            </h3>
+
+                            <br><br>
+                            <h3>Introduction
+                            </h3>
+
+                            <p>Production des métriques de test via le module « Pilotage » de Squash TM.</br>
+                                3 types d’indicateurs ont été mis en place :</br>
+                                <span class="padding_leftCourt">indicateurs pour les Tests</span></br>
+                                <span class="padding_leftCourt">indicateurs pour les Exigences</span></br>
+                                <span class="padding_leftCourt">indicateurs pour les Anomalies</span>
+                            </p>
+
+                            <br>
+
+                            <p>L'activité de suivit et controle des tests se déroule tout au long du processus de
+                                test.</br>
+                                Les résultats sont à retrouver <span class="fontweight500">après la phase d'Exécution
+                                    des Tests</span>, dans la partie
+                                <span><a href="#suiviresultats">"Suivi et contrôle des Tests - Résultats"</a></span>
+                                .
+                            </p>
+
+                        </div>
+                        <!--------- FIN HUIT SUIVIT ET CONTROLE------------------------------------------------------------->
+
+
+                    </div>
+                    <!--------- FIN BOARD DEUX ------------------------------------------------------------->
+
+
+
+
+                    <!--------- DEBUT BOARD TROIS ANALYSE DE TEST-------------------------------------------------------------------->
+                    <div class="Board_sousBoard">
+
+
+                        <h2 id="analyse">03. Analyse de Test</h2>
+
+                        <p>Input : Base de test</p>
+
+                        <p>Output : Conditions de test</p></br>
+
+                        <h3>Objectif : Analyser la base de test pour identifier les conditions de test.
+                        </h3>
+
+                        <p>
+                            Le périmètre d’analyse étant le cas d’utilisation « Mettre en place un contrat de crédit
+                            automobile ».</p>
+
+
+
+
+
+
+                        <!--------- DEBUT DIAGRAMME CAS D'UTILISATION ------------------------------------------->
+                        <div class="Board_sousBoard--item">
+                            <h3>Diagramme de cas d’utilisation</h3>
+                            <p>Diagramme réalisé afin d’identifier les acteurs, les cas d’utilisation et leurs
+                                associations.</p>
+                            <img class="board_img board_img--item" src="assets/img/board_img--use_case.png" alt="">
+
+                            <div class="board_zero--chapitreSection">
+                                <p>Il y a 4 acteurs :</p>
+                                <ul class="board_sousInfos">
+                                    <li class="padding_leftCourt">Gestionnaire de credit :
+                                        met
+                                        en place le contrat de credit automobile</li>
+                                    <li class="padding_leftCourt">Responsable crédit :
+                                        Produit
+                                        des statistiques et supervise les contrats de crédit
+                                    </li>
+                                    <li class="padding_leftCourt">Administrateur Crédit Auto
+                                        :
+                                        administrateur de l’application</li>
+                                    <li class="padding_leftCourt">Loueur automobile
+                                        partenaire
+                                        : vérifie si un client a un contrat en cours</li>
+                                </ul>
+                            </div>
+                            <br>
+
+                            <div class="board_zero--chapitreSection">
+                                <p>Les users cases sont regroupés en packages :</p>
+                                <ul class="board_sousInfos">
+                                    <li class="padding_leftCourt">Gestion contrat de crédit
+                                        Auto</li>
+                                    <li class="padding_leftCourt">Gestion des statistiques
+                                    </li>
+                                    <li class="padding_leftCourt">Paramétrage crédit Auto
+                                    </li>
+                                    <li class="padding_leftCourt">Gestion location
+                                        automobile
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!--------- FIN DIAGRAMME CAS D'UTILISATION --------------------------------------------->
+
+
+                        <!--------- DEBUT BPMN ------------------------------------------------------------------>
+                        <div class="Board_sousBoard--item">
+                            <h3>Modélisation BPMN</h3>
+                            <p>Un diagramme Business Process Model and Notation (BPMN), a été réalisé dans l’objectif
+                                d’obtenir une représentation visuelle du processus métier : «UC1-Mettre en place
+                                un
+                                contrat de crédit automobile».</p>
+
+
+
+                            <!--------- DEBUT BPMN TEXTE V1------------------------------------------------------------------>
+
+                            <img class="board_img board_img--item margin_bottom_0"
+                                src="assets/img/board_img--bpmnV1.png" alt="">
+
+                            <!-- <div class="board_zero--chapitreSection margin_top_0">
+                                <p>Il y a 3 acteurs :</p>
+                                <ul class="board_sousInfos">
+                                    <li class="padding_leftCourt">Le Client</li>
+                                    <li class="padding_leftCourt">Le Gestionnaire de client
+                                    </li>
+                                    <li class="padding_leftCourt">L'Application Crédit Auto</li>
+                                </ul>
+                            </div> -->
+                            <br>
+
+                            <!-- <div class="board_zero--chapitreSection">
+                                <p>Les étapes du processus :</p>
+                                <ul class="board_sousInfos liste_bpmn">
+
+                                    <li class="padding_leftCourt">01. Le client fait une demande de crédit
+                                    </li>
+
+                                    <li class="padding_leftCourt">02. Le chargé de clientèle vérifie
+                                        l'adéquation
+                                        du besoin</li>
+
+
+                                    <li class="padding_leftCourt">03. Adéquation ?<br>
+                                        Non, le processus s’arrête.</br>
+                                        Oui, le processus
+                                        est poursuivi.
+                                    </li>
+
+                                    <li class="padding_leftCourt">04. Le chargé de clientèle réalise la
+                                        simulation.
+                                    </li>
+
+
+                                    <li class="padding_leftCourt">05. Intéressé par la simulation ?<br>
+                                        Non, le
+                                        processus
+                                        s’arrête.</br>
+                                        Oui, le processus est poursuivi et le
+                                        chargé de
+                                        clientèle vérifie l’acceptabilité du dossier de crédit.
+                                    </li>
+
+
+                                    <li class="padding_leftCourt">07. Dossier acceptable ?<br>
+                                        Non, le processus
+                                        s’arrête.</br>
+                                        Oui, le processus est poursuivi et le
+                                        chargé de
+                                        clientèle collecte les documents justificatifs puis il établit et édite 2
+                                        exemplaires
+                                        du
+                                        contrat de crédit et imprime le contrat.
+                                    </li>
+
+                                    <li class="padding_leftCourt">08. Contrat signé ?</br>
+                                        Non, le
+                                        processus
+                                        s’arrête.</br>
+                                        Oui, le processus est poursuivi.
+                                    </li>
+
+                                    <li class="padding_leftCourt">
+                                        09. Le chargée de clientèle numérise le contrat.
+                                    </li>
+
+                                    <li class="padding_leftCourt">10. Le contrat est enregistré dans le
+                                        backoffice et le processus prend
+                                        fin.</li>
+                                </ul>
+                            </div> -->
+
+
+
+
+
+
+
+                            <!--------- DEBUT TEST STATIQUE --------------------------------------------------------->
+                            <div class="Board_sousBoard--item first">
+                                <h3>Revue documentaire</h3>
+                                <p>Type Revue : </br>
+                                    <span class="padding_leftCourt">Relecture technique (Walk-Through)</span>
+
+                                </p>
+
+                                <p>Documents analysés :</br>
+                                    <span class="padding_leftCourt">01 - Expression du Besoin-V2.0</span></br>
+                                    <span class="padding_leftCourt">02 - Projet Crédit Auto -
+                                        Maquettage-V2.0</span></br>
+                                    <span class="padding_leftCourt">03 - Dossier des exigences-V2.0</span>
+                                </p></br>
+                                <p>Test statique mené afin de détecter d’éventuels défauts significatifs <span
+                                        class="fontweight500">très tôt</span>
+                                    dans le cycle de développement logiciel. Les défauts sont ensuite enregistrés
+                                    dans le document "Revue des exigences".</p>
+                                <img class="board_img board_img--item margin_bottom_0"
+                                    src="assets/img/board_img--revue.png" alt="">
+                            </div>
+                            <!--------- FIN TEST STATIQUE ----------------------------------------------------------->
+
+
+                            <!--------- DEBUT REFERENTIEL DES EXIGENCES --------------------------------------------->
+                            <div class="Board_sousBoard--item">
+                                <h3>Référentiel des exigences</h3>
+                                <p>L’objectif de cette étape est l’identification et la structuration des
+                                    exigences, <span class="fontweight500">conditions de test</span>, en respectant un
+                                    template prédéfini.</p>
+
+                                <p>Le resultat obtenu est un mindmap représentant la globalité du produit.</p>
+
+                                <img class="board_img board_img--item" src="assets/img/board_img--referentiela.png"
+                                    alt="">
+
+
+                                <div class="board_zero--chapitreSection">
+                                    <p>On y retrouve :</p>
+                                    <ul class="board_sousInfos">
+                                        <li class="padding_leftCourt">01. Le Nom du projet</li>
+                                        <li class="padding_leftCourt">02. Le Types d’Exigences
+                                        </li>
+                                        <li class="padding_leftCourt">03. Les Packages (Modules)
+                                        </li>
+                                        <li class="padding_leftCourt">04. Les Macro-Fonctions
+                                        </li>
+                                        <li class="padding_leftCourt">05. Les Fonctions</li>
+                                        <li class="padding_leftCourt">06. Les Exigences</li>
+                                    </ul>
+                                </div>
+
+                                <img class="board_img board_img--item margin_bottom_0"
+                                    src="assets/img/board_img--referentielb.png" alt="">
+                            </div>
+
+                            <!--------- FIN REFERENTIEL DES EXIGENCES ----------------------------------------------->
+
+
+                            <!-- <p><b>Analyse de risque pour chaque condition de test</b> </p> -->
+
+                        </div>
+                        <!--------- FIN BOARD TROIS ANALYSE DE TEST------------------------------------------------------------->
+
+
+
+
+
+
+                        <!--------- DEBUT QUATRE CONCEPTION----------------------------------------------------------->
+                        <div class="Board_sousBoard">
+                            <h2 id="conception">04. Conception des Tests</h2>
+
+                            <p>Input : Conditions de test</p>
+
+                            <p>Output : Cas de test de haut niveau</p></br>
+
+                            <h3>Objectif : Concevoir les tests, données et environnements.
+                            </h3>
+                            <p>Conception de tests de haut niveau, préparation des jeux de données logiques et de
+                                l’environnement de test.</p>
+
+                            <div class="Board_sousBoard--item first">
+                                <h3>Mise en place du référentiel des Exigences</h3>
+                                <p>Dans le logiciel <span class="fontweight500">Squash TM</span>, onglet "Exigences",
+                                    l’arborescence du référentiel des
+                                    Exigences
+                                    est reproduite en suivant l’ordre suivant : </br>
+                                    <span class="padding_leftCourt">Nom du projet,</span> </br>
+                                    <span class="padding_leftCourt">type d'exigence,</span></br>
+                                    <span class="padding_leftCourt">packages,</span></br>
+                                    <span class="padding_leftCourt">macro-fonctions, </span></br>
+                                    <span class="padding_leftCourt">fonctions</span></br>
+                                    <span class="padding_leftCourt">exigences</span>
+                                </p>
+                                <br>
+                                <p>Exemple : Exigences de la Fonction « PK02.MF01.F01.Simulation_Crédit »
+                                </p>
+                                <img class="board_img board_img--itemCourt" src="assets/img/board_img--referentiel2.png"
+                                    alt="">
+                            </div>
+
+                            <div class="Board_sousBoard--item">
+                                <h3 class="margin_top_30">Tracabilité et Couverture des exigences</h3>
+                                <p>Dans le logiciel Squash, pour chaque exigence de l’onglet "Exigences", un ou
+                                    plusieurs
+                                    cas
+                                    de test sont créer dans l’onglet "Cas de test".</p>
+
+                                <p>Chaque cas de test est
+                                    associé
+                                    informatiquement à son exigence.
+                                </p>
+                                <br>
+
+                                <p>Exemple : Cas de test des Exigences de la Fonction
+                                    « PK02.MF01.F01.Simulation_Crédit »
+                                </p>
+                                <img class="board_img board_img--itemCourt" src="assets/img/board_img--referentiel3.png"
+                                    alt="">
+
+                                </br></br></br>
+
+                                <p>En effet, les cas de tests sont structurés grâce au concept de la <span
+                                        class="fontweight500">traçabilité
+                                        bidirectionnelle</span>, c’est-à-dire que chaque exigence est liée aux cas de
+                                    tests qui la
+                                    vérifient, et que chaque cas de test est lié aux exigences qu’il couvre. </p>
+                                <p>Cela permet de vérifier que, pendant la phase de conception, des tests ont bien été
+                                    conçus pour toutes les exigences et ainsi atteindre <span class="fontweight500">une
+                                        bonne couverture</span>.
+                                </p>
+                                <p></p>
+                                <br>
+
+                                <p>Exemple : Le cas de test « Montant_Achat_Véhicule_Valide_PEV » qui est lié à
+                                    l’exigence « Montant_Achat_Véhicule »
+                                </p>
+                                <p>Depuis l'onglet Exigence :</p>
+                                <img class="board_img board_img--itemCourt"
+                                    src="assets/img/board_img--tracabiliteexigence.png" alt="">
+                                </br></br></br>
+
+                                <p>Depuis l'onglet Cas de Test :</p>
+                                <img class="board_img board_img--itemCourt"
+                                    src="assets/img/board_img--tracabilitecasdetest.png" alt="">
+                            </div>
+
+
+
+
+
+                            <div class="Board_sousBoard--item">
+                                <h3 class="margin_top_30">Conception des cas de test</h3>
+                                <p>Trois techniques de test de type Boite Noir ont été utilisées :</p>
+                                <ul>
+                                    <li class="padding_leftCourt">Table de décision </li>
+                                    <li class="padding_leftCourt">Partition d’Équivalence </li>
+                                    <li class="padding_leftCourt">Analyse des valeurs limites a 1 ou 2 valeurs</li>
+                                </ul>
+                            </div>
+
+                            <div class="Board_sousBoard--item">
+                                <h3 class="margin_top_30">Jeux de données logiques</h3>
+                                <p>Les cas de tests sont conçus en identifiant les données de tests
+                                    nécessaires à l’exécution des tests, mais à cette étapes, ces données ne seront pas
+                                    utilisées.</p>
+                                </br>
+                                <p>Exemple : Pour le cas de test « Montant_Achat_Véhicule_Valide_PEV »</p>
+                                <p>
+                                    Nous avons identifiés le test :
+                                    "PK02.MF01.F01.Ex02.CT01-Montant_Achat_Véhicule_Valide_PEV"</br>
+                                    Nous avons aussi identifié le besoin en données de test : un montant compris entre
+                                    6 250€
+                                    et 50 000€</br>
+                                    (D’après la règle de gestion de l’exigence).</p>
+                                <img class="board_img board_img--itemCourt" src="assets/img/board_img--rg.png" alt="">
+                                <br><br>
+                                <p>Mais à ce stade, ces entiers positifs ne sont pas précisés, ça peut être n’importe
+                                    quels entiers positifs compris entre 6 250€ et 50 000€. </br>
+                                    Ils seront précisés
+                                    lors
+                                    de
+                                    <span class="fontweight500">la phase d’implémentation</span>.
+                                </p>
+                            </div>
+
+                            <div class="Board_sousBoard--item">
+                                <h3 class="margin_top_30">
+                                    Environnement de test</h3>
+                                <p>À cette étape, il faut concevoir l'environnement de test, mais dans notre cas,
+                                    c'était déja fait puisque l'application web etait déja accésible.</p>
+                            </div>
+
+
+                        </div>
+                        <!--------- FIN QUATRE CONCEPTION------------------------------------------------------------->
+
+
+
+
+
+
+                        <!--------- DEBUT CINQ IMPLEMENTATION----------------------------------------------------------->
+                        <div class="Board_sousBoard">
+                            <h2 id="implementation">05. Implémentation des Tests</h2>
+
+                            <p>Input : </br>
+                                <span class="padding_leftCourt">Cas de test de haut niveau</span>
+
+                            </p>
+
+                            <p>Outputs :</br>
+                                <span class="padding_leftCourt">Procédure de test</span></br>
+                                <span class="padding_leftCourt">Scénarios de test</span></br>
+                                <span class="padding_leftCourt">Prérequis d'exécution</span>
+                            </p></br>
+
+
+                            <h3>Objectif : Se mettre en situation d’exécuter les tests.
+                            </h3>
+
+                            <p>Conception de tests de bas niveau, insertion des jeux de données physiques et
+                                validation de
+                                l'envirionnement de test.</p>
+
+
+                            <div class="Board_sousBoard--item">
+                                <h3>Procédure de Test</h3>
+                                <p>Une procédure de test manuel a été créer pour préparer l'éxecution des scénarios de
+                                    test.</p>
+
+                                <p>On y retrouve les cas de test organisés en fonction des écrans :</p>
+                                <ul>
+                                    <li class="padding_leftCourt">Simulation Crédit</li>
+                                    <li class="padding_leftCourt">Echéancier</li>
+                                    <li class="padding_leftCourt">Recherche Client</li>
+                                    <li class="padding_leftCourt">Création Client</li>
+                                    <li class="padding_leftCourt">Création Contrat</li>
+                                </ul>
+
+                                <br>
+                                <p>Les cas de test composants les scénarios de test couvrent les
+                                    scénarios
+                                    d’utilisation suivant :</p>
+                                <ul>
+                                    <li class="padding_leftCourt">Scénario Nominal (SCN)</li>
+                                    <li class="padding_leftCourt">Scénarios Alternatifs (SCA)</li>
+                                    <li class="padding_leftCourt">Scénarios d'Exception (SCE)</li>
+                                </ul>
+
+
+
+                                <br>
+                                <p>Extrait de la procédure de Test : Écran "Simulation_Crédit"</p>
+                                <img class="board_img board_img--itemCourt" src="assets/img/board_img--procedure.png"
+                                    alt="">
+
+                            </div>
+
+
+
+
+
+
+
+
+                            <div class="Board_sousBoard--item">
+                                <h3>Campagnes</h3>
+                                <p>Dans le logiciel Squash, onglet « Campagnes », 2 campagnes ont été préparées pour
+                                    l'éxecution des campagnes suivantes :
+                                </p>
+                                <ul>
+                                    <li class="padding_leftCourt">Campagne CAL (Conditions Avant Livraison)</li>
+                                    <li class="padding_leftCourt">Campagne Fonctionnelle</li>
+                                </ul>
+                                <p>Chaque campagne est composée d’itérations contenant les scénarios de test qui leur
+                                    sont
+                                    associés :
+                                </p>
+                                <!-- <br>
+                            <p>Extrait de la procédure de Test : Écran "Simulation_Crédit"</p> -->
+                                <img class="board_img board_img--itemCourt"
+                                    src="assets/img/board_img--implementation.png" alt="">
+                            </div>
+
+
+
+                            <div class="Board_sousBoard--item">
+                                <h3>Scénarios de test</h3>
+                                <p class="indicateurs">Scénarios de test de la Campagne CAL</p>
+                                <p>Campagne CAL ou Test de fumée (Smoke Testing).</br>
+                                    Tests préliminaires effectués pour vérifier les fonctionnalités de base de
+                                    l’application.
+                                </p>
+
+                                <p>Les scénarios de test de la campagne CAL</p>
+                                <img class="board_img board_img--itemCourt" src="assets/img/board_img--cal.png" alt="">
+                            </div>
+
+
+                            <div class="margin_top_5">
+                                <p class="indicateurs">Scénarios de test de la Campagne Fonctionnelle</p>
+                                <p>Campagne principale, test de bout en bout (end to end).</br>
+                                    On y retrouve les scénarios de test relatifs au périmètre de
+                                    test du
+                                    1er cas d’utilisation : « UC1-Mettre en place un contrat de crédit automobile ».
+                                </p>
+                                <br>
+
+                                <p>Aperçu des scénarios de test réalisés pour la campagne Fonctionnelle :</p>
+                                <img class="board_img board_img--itemCourt"
+                                    src="assets/img/board_img--fonctionnelle1.png" alt="">
+                                <img class="board_img board_img--itemCourt margin_top_0"
+                                    src="assets/img/board_img--fonctionnelle2.png" alt="">
+
+                            </div>
+
+
+
+                            <div class="Board_sousBoard--item">
+                                <h3 class="margin_top_30">Jeux de données physiques</h3>
+                                <p>Pour la conception des cas de tests de bas niveau, des données de test physiques
+                                    ont
+                                    été calculées et regroupées dans un document.</p>
+                                <br>
+                                <p>Exemples pour les cas de test issues de l'Exigence "Montant_Achat_Véhicule"</p>
+                                <img class="board_img board_img--itemCourt" src="assets/img/board_img--jdp1.png" alt="">
+
+                                <br><br><br>
+
+                                <img class="board_img board_img--itemCourt" src="assets/img/board_img--jdp2.png" alt="">
+                            </div>
+
+
+                            <div class="Board_sousBoard--item">
+                                <h3>Environnement de Test</h3>
+                                <p>Ici nous avons préparés l’exécution des tests en vérifiant que
+                                    l’environnement de test, les outils de test, les données de test et les identifiants
+                                    de connexion des profils utilisateur étaient bien disponibles et accessibles.
+                                </p>
+                            </div>
+
+
+                            <div class="Board_sousBoard--item">
+                                <h3>Critères d'entrée</h3>
+                                <img class="board_img board_img--itemCourt img_cecs" src="assets/img/board_img--CE.png"
+                                    alt="">
+                                <br><br>
+                                <p>Une fois que les critères d’entrée sont satisfaits, on passe à l’étape suivante,
+                                    l'étape d’Exécution.
+                                </p>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        <!--------- FIN CINQ IMPLEMENTATION------------------------------------------------------------->
+
+
+
+                        <!--------- DEBUT SEPT EXECUTION----------------------------------------------------------->
+                        <div class="Board_sousBoard">
+                            <h2 id="execution">06. Exécution des Tests</h2>
+
+
+
+                            <p>Inputs :</br>
+                                <span class="padding_leftCourt">Procédure de test</span></br>
+                                <span class="padding_leftCourt">Scénarios de test</span></br>
+                                <span class="padding_leftCourt">Prérequis d'exécution</span>
+                            </p>
+
+                            <p>Output : </br>
+                                <span class="padding_leftCourt">Status des tests</span></br>
+                                <span class="padding_leftCourt">Anomalies</span>
+                            </p>
+
+
+                            </br>
+
+                            <h3>Objectif : Exécuter, enregistrer les résultats et signaler les défauts.
+                            </h3>
+
+                            <p>Exécution des tests Manuels dans Squash, « Module Campagne »</br>
+                                Formalisation des rapports d’anomaliedans Mantis BT.</p>
+
+
+
+                            <div class="Board_sousBoard--item first">
+                                <h3>Scénarios de test détaillés</h3>
+                                <p class="indicateurs">Campagne CAL</p>
+                                <p>Exécution des scénarios de test de la compagne CAL</br>
+                                    Ici, nous avons testé les fonctionnalités basiques d’authentification, pour nous
+                                    assurer que
+                                    le système réagissait comme attendu.</p>
+                                <br>
+                                <p>Composition d'un scénario de cette campagne</p>
+                                <img class="board_img board_img--itemCourt" src="assets/img/board_img--executioncal.png"
+                                    alt="">
+                            </div>
+
+
+
+                            <div class="margin_top_5">
+                                <p class="indicateurs ">Campagne Fonctionnelle</p>
+                                <p>Exécution des scénarios de test de la compagne fonctionnelle, relatives au périmètre
+                                    de test
+                                    du 1er cas d’utilisation : « UC1-Mettre en place un contrat de crédit
+                                    automobile ».</p>
+
+                                <br>
+                                <p>Composition d'un scénarios de test de cette campagne</p>
+                                <img class="board_img board_img--itemCourt"
+                                    src="assets/img/board_img--executioncfonctionnelle.png" alt="">
+                            </div>
+
+                            <div class="Board_sousBoard--item">
+                                <h3>Anomalies</h3>
+                                <p>Les anomalies rencontrées ont été enregistrées dans des rapports d'anomalies dans
+                                    l'application
+                                    <span class="fontweight500">Mantis
+                                        BT</span>.
+                                </p>
+                                <br>
+
+                                <img class="board_img board_img--itemCourt" src="assets/img/board_img--mantis.png"
+                                    alt="">
+                            </div>
+
+
+
+
+
+
+                            <div class="Board_sousBoard--item">
+                                <h3>Rapport d'exécution des tests</h3>
+                                <div>
+                                    <p class="padding_leftCourt fontweight500">Campagne CAL</p>
+                                    <div class="box5">
+                                        <div class="boxin5 margin_top_ecranmobile">
+                                            <!-- <p>Ecran Simulation</p> -->
+                                            <img src="assets/img/board_img--rapportcal1.png" alt="">
+                                            <br>
+                                            <br>
+                                            <p></p>
+                                        </div>
+
+                                        <div class="boxin5 margin_top_ecranmobile2">
+                                            <!-- <p>Ecran Echéancier</p> -->
+                                            <img src="assets/img/board_img--rapportcal2.png" alt="">
+                                            <br>
+                                            <br>
+                                            <p></p>
+                                        </div>
+                                    </div>
+
+                                    <img src="assets/img/board_img--rapportcalAvancement.png" alt="">
+
+                                </div>
+                                <br><br><br><br><br><br>
+                                <div>
+                                    <p class="padding_leftCourt fontweight500">Campagne Fonctionnelle</p>
+                                    <div class="box5">
+                                        <div class="boxin5 margin_top_ecranmobile">
+                                            <!-- <p>Ecran Simulation</p> -->
+                                            <img src="assets/img/board_img--rapportfonc1.png" alt="">
+                                            <br>
+                                            <br>
+                                            <p></p>
+                                        </div>
+
+                                        <div class="boxin5 margin_top_ecranmobile">
+                                            <!-- <p>Ecran Echéancier</p> -->
+                                            <img src="assets/img/board_img--rapportfonc2.png" alt="">
+                                            <br>
+                                            <br>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <img src="assets/img/board_img--rapportfoncAvancement.png" alt="">
+                                </div>
+                                <br><br><br><br><br><br>
+                                <div>
+                                    <p class="padding_leftCourt fontweight500">Rapport d'anomalie Mantis BT</p>
+                                    <img src="assets/img/board_img--raportanomalie.png" alt="">
+                                    <br><br>
+                                    <p>Nous avons 14 types différents d'anomalies répartis parmi :</p>
+                                    <ul>
+
+                                        <li class="padding_leftCourt">2 critiques</li>
+                                        <li class="padding_leftCourt">3 majeurs</li>
+                                        <li class="padding_leftCourt">9 mineurs</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        <!--------- FIN SEPT EXECUTION------------------------------------------------------------->
+
+
+
+
+                        <!--------- DEBUT HUIT SUIVIT ET CONTROLE----------------------------------------------------------->
+                        <div class="Board_sousBoard">
+                            <h2 id="suiviresultats">Suivi et contrôle des Tests - Résultats</h2>
+
+
+                            <div class="Board_sousBoard--item first">
+                                <!-- <h3>Rapport d'exécution de Test</h3> -->
+
+
+                                <h3>Indicateurs pour les Tests</h3>
+
+                                <div class="indicateurs">
+
+                                    <div class="board_infos">
+
+
+                                        <p class="fontweight500">Répartition des Cas de Test par Type de fonctionnalité
+                                        </p>
+                                        <img class="board_img board_img--itemCourt img_type_fonctionnalite"
+                                            src="assets/img/board_img--fonctionnalite.png" alt="">
+
+
+
+
+                                        <br><br> <br><br> <br>
+
+
+                                        <p class="fontweight500">Campagne fonctionnelle <br>
+                                            Inventaire des tests par suite de tests : Itération 1</p>
+
+                                        <img class="board_img board_img--itemCourt"
+                                            src="assets/img/board_img--campagnefonctionnalite.png" alt="">
+                                        <!-- <p>Nous avons identifié 59% de scénarios
+                                            "critiques"</br>
+                                            et 41% de scénarios de criticité "majeure".</p> -->
+
+
+
+
+
+                                        <br><br> <br><br> <br>
+
+
+                                        <p class="fontweight500">Répartition des suites de Tests par criticité
+                                        </p>
+
+                                        <img class="board_img board_img--itemCourt img_exe_test"
+                                            src="assets/img/board_img--criticite.png" alt="">
+                                        <!-- <p>Nous avons identifié 59% de scénarios
+                                        "critiques"</br>
+                                        et 41% de scénarios de criticité "majeure".</p> -->
+
+
+
+
+
+
+                                        <!-- 
+                                     <br><br> <br><br> <br>
+
+                                        <p class="padding_leftCourt">Couverture par les cas de Test </p>
+
+                                        <img class="board_img board_img--itemCourt img_exe_test"
+                                        src="assets/img/board_img--casdetest.png" alt=""> -->
+
+
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="Board_sousBoard--item">
+                                <h3>Indicateurs pour les Exigences</h3>
+
+
+                                <div class="indicateurs">
+                                    <!-- <p>Couverture des Exigences par Ecrans</br>(Statut d'execution pour chaque écran)</p> -->
+                                    <p class="fontweight500">Statut d'exécution des Exigences pour chaque écran</p>
+
+
+
+
+
+                                    <div class="box5">
+                                        <div class="boxin5 margin_top_ecranmobile">
+                                            <p>Écran Simulation</p>
+                                            <img src="assets/img/board_img--ecran_simulation.png" alt="">
+                                            <br>
+                                            <br>
+                                            <p></p>
+                                        </div>
+
+                                        <div class="boxin5 margin_top_ecranmobile2">
+                                            <p>Écran Echéancier</p>
+                                            <img src="assets/img/board_img--ecran_echeancier.png" alt="">
+                                            <br>
+                                            <br>
+                                            <p></p>
+                                        </div>
+
+                                        <div class="boxin5">
+                                            <p>Écran Recherche Client</p>
+                                            <img src="assets/img/board_img--ecran_recherche_client.png" alt="">
+                                            <br>
+                                            <br>
+                                            <p></p>
+                                        </div>
+
+                                        <div class="boxin5">
+                                            <p>Écran Création Client</p>
+                                            <img src="assets/img/board_img--ecran_creation_client.png" alt="">
+                                            <br>
+                                            <br>
+                                            <p>
+                                            </p>
+                                        </div>
+
+                                        <div class="boxin5">
+                                            <p>Écran Création Contrat</p>
+                                            <img src="assets/img/board_img--ecran_creation_contrat.png" alt="">
+                                            <br>
+                                            <br>
+                                            <p>
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="Board_sousBoard--item">
+                                <h3>Indicateurs pour les Anomalies</h3>
+
+                                <div class="board_infos margin_top_2">
+                                    <p class="padding_left ano fontweight500">Rapport des anomalies</p>
+                                    <img class="board_img board_img--itemCourt"
+                                        src="assets/img/board_img--anomalie1.png" alt="">
+                                    <br><br>
+
+                                </div>
+
+
+                                <div class="indicateurs">
+
+                                    <p class="fontweight500">Anomalies par severité</p>
+                                    <img class="board_img board_img--itemCourt img_anomalie"
+                                        src="assets/img/board_img--anomalie2.png" alt="">
+                                </div>
+
+
+
+                            </div>
+
+
+
+                        </div>
+                        <!--------- FIN HUIT SUIVIT ET CONTROLE------------------------------------------------------------->
+
+
+                        <!--------- DEBUT NEUF CLOTURE DE TEST----------------------------------------------------------->
+                        <div class="Board_sousBoard">
+                            <h2 id="cloture">07. Clôture des Tests</h2>
+
+                            <h3>Objectif : Faire un bilan sur les tests.
+                            </h3>
+
+
+
+                            <p>Formalisation du Bilan de synthèse de test</br>
+                                Décision : PV de Test « Go/NoGo » ;
+
+
+                            <div class="Board_sousBoard--item first">
+                                <h3>Bilan de Synthèse</h3>
+
+                                <p>Les tests ont été structurés sous la forme de
+                                    Campagne Fonctionnelle.</br>
+                                    La campagne a été déroulée en 1 itération</br>
+                                    Lors de cette itération nous avons obtenu : </p>
+                                <ul class="board_sousInfos">
+                                    <li class="padding_leftCourt">100% de couverture des exigences </li>
+                                    <li class="padding_leftCourt">83% d'exécution de test</li>
+                                </ul>
+
+
+
+                                <br>
+
+                                <p>Et détecté un total de 45 anomalies :</p>
+
+
+                                <ul class="board_sousInfos">
+                                    <li class="padding_leftCourt">8 bloquantes</li>
+                                    <li class="padding_leftCourt">3 critiques</li>
+                                    <li class="padding_leftCourt">7 majeures</li>
+                                    <li class="padding_leftCourt">27 mineures</li>
+                                </ul>
+
+                                <br>
+
+
+
+                            </div>
+
+
+
+
+
+                            <div class="Board_sousBoard--item first">
+                                <h3>Décision : « Go/NoGo »</h3>
+                                <p class="margin_bottom_0">Critères de sortie</p>
+                                <img class="board_img board_img--itemCourt margin_bottom_0 img_cecs"
+                                    src="assets/img/board_img--CS.png" alt="">
+                                <br><br>
+                                <p>Compte tenu du taux d'exécution et des anomalies, on peut estimer que les
+                                    critères de sorties ne
+                                    sont
+                                    pas
+                                    respectés puisque que :
+                                </p>
+
+                                <img class="board_img board_img--itemCourt img_decision"
+                                    src="assets/img/board_img--cloture.png" alt="">
+
+                                <p class="gonogo">On peut donc se prononcer en faveur d’un "<span
+                                        class="fontweight500">NO GO</span>" et se
+                                    diriger
+                                    vers la
+                                    réalisation d’une
+                                    autre
+                                    itération.
+                                </p>
+                                <br><br>
+                                <img class="board_img board_img--itemCourt img_gonogo"
+                                    src="assets/img/board_img--gonogo.png" alt="">
+                            </div>
+
+
+                        </div>
+                        <!--------- FIN NEUF CLOTURE DE TEST ------------------------------------------------------------->
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+                <!--====== FIN BOARD ==================================================================================-->
+
+
+        </section>
+    </main>
+
+
+    <!--====== DEBUT FOOTER ===========================================================================================-->
+    <footer>
+        <div class="footer__inner">
+            <p>&#169; 2024 Yannick Kabasele - Réalisé avec passion.</p>
+        </div>
+    </footer>
+    <!--====== FIN FOOTER ============================================================================================-->
+
+
+    <!--========== DEBUT SCROLL UP ===================================================================================-->
+    <a href="#sommaire" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line scrollup__icon"></i>
+    </a>
+    <!--========== FIN SCROLL UP =====================================================================================-->
+
+    <!-- </div> FIN WRAPPER -->
+
+
+
+    <!-- DEBUT SCROLL REVEAL ------------------------------->
+    <script src="js/scrollreveal.min.js"></script>
+
+    <!-- MAIN JS ------------------------------->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
